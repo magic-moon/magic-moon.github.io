@@ -1,0 +1,49 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on 賓 | Magicmoon</title>
+    <link>https://bigzhang.org/</link>
+    <description>Recent content in Home on 賓 | Magicmoon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Mar 2020 16:24:43 +0000</lastBuildDate>
+    <atom:link href="https://bigzhang.org/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cns</title>
+      <link>https://bigzhang.org/cn/</link>
+      <pubDate>Sun, 29 Mar 2020 14:18:22 +0000</pubDate>
+      <author>張賓</author>
+      <guid>https://bigzhang.org/cn/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stocks</title>
+      <link>https://bigzhang.org/stock/</link>
+      <pubDate>Wed, 25 Mar 2020 07:36:27 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/stock/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://bigzhang.org/about/</link>
+      <pubDate>Tue, 24 Mar 2020 16:24:43 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/about/</guid>
+      <description>
+        &lt;p&gt;去以往尽凡尘，再回首牧马人&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

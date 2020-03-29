@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cns on 賓 | Magicmoon</title>
+    <link>https://bigzhang.org/cn/</link>
+    <description>Recent content in Cns on 賓 | Magicmoon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Mar 2020 14:18:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://bigzhang.org/cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>读一些政治</title>
+      <link>https://bigzhang.org/cn/2020/03/politic/</link>
+      <pubDate>Sun, 29 Mar 2020 14:18:22 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/politic/</guid>
+      <description>我的心情越发的沉闷^[自从去年此时想到一些让我后背发凉的事] 我当然希望我的国家美好，我的世界美好，偏颇的声音也应该被允许。而不是一刀切，支持</description>
+    </item>
+    
+    <item>
+      <title>BiBTeX制作参考文献</title>
+      <link>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</link>
+      <pubDate>Thu, 26 Mar 2020 09:38:25 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</guid>
+      <description>使用bibtex编译辅助文件,aux发现aux文件名如果是中文就不能编译。</description>
+    </item>
+    
+    <item>
+      <title>Lite版树莓派系统使用日志</title>
+      <link>https://bigzhang.org/cn/2020/03/lite-raspbereypi/</link>
+      <pubDate>Wed, 25 Mar 2020 05:38:27 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/lite-raspbereypi/</guid>
+      <description>下载地址 开启SSH连接 在boot目录下新建一个ssh空文件即可 设置wifi连接 与上面类似，在其目录下新建一个WiFi配置文件wpa_supp</description>
+    </item>
+    
+    <item>
+      <title>Git Learning</title>
+      <link>https://bigzhang.org/cn/2020/03/git-learning/</link>
+      <pubDate>Tue, 24 Mar 2020 17:04:16 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/git-learning/</guid>
+      <description>之前学习了git差不多又忘记了，所以今天再复习一下，然后做一下记录，我之前都是在廖雪峰的网站上学习的。而且发现git的命令已经改了，所以必须</description>
+    </item>
+    
+    <item>
+      <title>疫情之下</title>
+      <link>https://bigzhang.org/cn/2020/03/covid-19/</link>
+      <pubDate>Tue, 24 Mar 2020 04:53:17 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/covid-19/</guid>
+      <description>腾讯实时报道</description>
+    </item>
+    
+    <item>
+      <title>Stroage</title>
+      <link>https://bigzhang.org/cn/2020/03/stroage/</link>
+      <pubDate>Sun, 22 Mar 2020 19:02:01 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/stroage/</guid>
+      <description>说起Android“内部存储”，对于开发者而言可以毫不犹豫地脱口而出，不就是/data/data目录嘛，也不尽然，/data/user/0/</description>
+    </item>
+    
+    <item>
+      <title>Hugo Config</title>
+      <link>https://bigzhang.org/cn/2020/03/hugo-config/</link>
+      <pubDate>Sun, 22 Mar 2020 17:49:42 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/hugo-config/</guid>
+      <description>本文环境介绍 #hugo 版本 version Hugo Static Site Generator v0.54.0 linux/amd64 BuildDate: 2019-02-22T08:11:04Z #go 版本 go version go1.11.5 linux/amd64 #系统版本 more /etc/redhat-release CentOS Linux release 7.6.1810 (Core) #版本和环境详细信息 hugo env Hugo Static Site Generator v0.54.0 linux/amd64 BuildDate: 2019-02-22T08:11:04Z GOOS=&amp;quot;linux&amp;rdquo; GOARCH=&amp;quot;amd64&amp;rdquo; GOVERSION=&amp;quot;go1.11.5&amp;quot; 初始化站点 始化一个站</description>
+    </item>
+    
+    <item>
+      <title>Raspberrypi Start</title>
+      <link>https://bigzhang.org/cn/2020/03/raspberrypi-start/</link>
+      <pubDate>Sun, 22 Mar 2020 17:17:39 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/raspberrypi-start/</guid>
+      <description>Raspberry Pi 4快速入门手册&amp;para; Raspberry Pi® 是 Raspberry Pi Foundation 基于 ARM 制造的信用卡大小的 SBC（单板计算机）。树莓派运行基于 Debian 的 GNU / Linux 操作系统 Raspbian</description>
+    </item>
+    
+    <item>
+      <title>知识是自由和免费的，但获取知识的渠道不是</title>
+      <link>https://bigzhang.org/cn/2020/03/knowlage-is-free/</link>
+      <pubDate>Sat, 21 Mar 2020 14:45:23 +0800</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/knowlage-is-free/</guid>
+      <description>刚刚看了一篇王垠的文章，谈到对知识理解。先表明我自己的观点： 知识像空气、土地、阳光和水这些伟大的东西一样都是自由和免费的，但是获取他们的渠道</description>
+    </item>
+    
+    <item>
+      <title>我的Hugo个人站</title>
+      <link>https://bigzhang.org/cn/2020/03/new-hugo-site/</link>
+      <pubDate>Fri, 20 Mar 2020 16:29:35 +0800</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/new-hugo-site/</guid>
+      <description>就是这么轻松，我的blog学习之路。 最先接触hexo，但是hexo比较麻烦， 然后接触mywiki，非常简洁，不过没办法实现公式的编写。 $$$e=mc^2$ hugo server</description>
+    </item>
+    
+  </channel>
+</rss>

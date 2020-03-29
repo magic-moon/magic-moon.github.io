@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Raspberrypi Start - 賓 | Magicmoon</title>
+    <meta property="og:title" content="Raspberrypi Start - 賓 | Magicmoon">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Raspberry Pi® 是 Raspberry Pi Foundation 基于 ARM 制造的信用卡大小的 SBC（单板计算机）。树莓派运行基于 Debian 的 GNU / Linux 操作系统 Raspbian，并且具有很多其他系统上的端口。
+Raspberry Pi Foundation 宣布了新版本 Raspberry Pi 4 B ，详情请查阅 这里。随着板载 WiFi / &amp;hellip;">
+      <meta property="og:description" content="Raspberry Pi® 是 Raspberry Pi Foundation 基于 ARM 制造的信用卡大小的 SBC（单板计算机）。树莓派运行基于 Debian 的 GNU / Linux 操作系统 Raspbian，并且具有很多其他系统上的端口。
+Raspberry Pi Foundation 宣布了新版本 Raspberry Pi 4 B ，详情请查阅 这里。随着板载 WiFi / &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://bigzhang.org/images/logo.png">
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+<script async src="/js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.png" alt="Bin Zhang" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/about/">关于</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/cn/recipe/">菜谱</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/magic-mooncn/2020-03-23-raspberrypi-start.md" target="_blank">编辑</a></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Raspberrypi Start</h1>
+
+
+<h3>張賓 / 
+2020-03-22</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+ <h1 id="raspberry-pi-4">Raspberry Pi 4快速入门手册<a class="headerlink" href="#raspberry-pi-4" title="Permanent link">&para;</a></h1>
+<p><strong>Raspberry Pi®</strong> 是 <a href="http://www.raspberrypi.org">Raspberry Pi Foundation</a> 基于 <strong>ARM</strong> 制造的信用卡大小的 <strong>SBC</strong>（单板计算机）。树莓派运行基于 Debian 的 <strong>GNU / Linux</strong> 操作系统 <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a>，并且具有很多其他系统上的端口。</p>
+<p><img alt="" src="https://raw.githubusercontent.com/SeeedDocument/Raspberry-Pi-4/master/img/hardware-overview-1400.jpg" /></p>
+<p>Raspberry Pi Foundation 宣布了新版本 <strong>Raspberry Pi 4 B</strong> ，详情请查阅 <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">这里</a>。随着板载 <strong>WiFi</strong> / <strong>Bluetooth</strong> 的支持和新的 64 位处理器，<strong>Raspberry Pi 4 B</strong> 将会成为制造商，工程师和学生最喜爱的开发板。</p>
+<p><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-17798475675.22.41fa7b2dO4iwgp&amp;id=597106720116"><img alt="" src="https://github.com/SeeedDocument/wiki_chinese/raw/master/docs/images/click_to_buy.PNG" /></a></p>
+<h2 id="raspberry-pi-4_1">Raspberry Pi 4 更新内容<a class="headerlink" href="#raspberry-pi-4_1" title="Permanent link">&para;</a></h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th></th>
+<th>树莓派3B+</th>
+<th>树莓派4B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上市时间</td>
+<td>2018年3月</td>
+<td>2019年6月</td>
+</tr>
+<tr>
+<td>主芯</td>
+<td>BCM2837B0</td>
+<td>BCM2711</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>ARM Cortex-A53 (ARMv8)</td>
+<td>ARM Cortex-A72 (ARMv8)</td>
+</tr>
+<tr>
+<td>CPU主频</td>
+<td>1.4GHz</td>
+<td>1.5GHz</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>1GB</td>
+<td>1GB/2GB/4GB</td>
+</tr>
+<tr>
+<td>USB Host</td>
+<td>4个2.0</td>
+<td>2个2.0和2个3.0</td>
+</tr>
+<tr>
+<td>显示接口</td>
+<td>全尺寸HDMI MIPI DSI显示接口</td>
+<td>2个Micro HDMI 2.0接口(4K 60FPS)</td>
+</tr>
+<tr>
+<td>蓝牙</td>
+<td>BLE 4.2</td>
+<td>BLE 5.0</td>
+</tr>
+<tr>
+<td>GPIO通用扩展口</td>
+<td>40Pin</td>
+<td>40Pin</td>
+</tr>
+<tr>
+<td>SD卡接口</td>
+<td>Micro SD卡</td>
+<td>Micro SD卡</td>
+</tr>
+<tr>
+<td>供电</td>
+<td>5V/2.5A Micro USB</td>
+<td>5V/3.0A USB-C</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_1">入门指导<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>准备材料</strong></p>
+<ul>
+<li>Raspberry Pi 4 B</li>
+<li>Wi-Fi 网络</li>
+<li>4GB (或更大) SD 卡和 SD 读卡器</li>
+<li>PC 或 Mac</li>
+<li>用于供电的 5V 3A USB 适配器 (可选的)</li>
+<li>一根 USB-C 数据线</li>
+<li>一个Micro HDMI转HDMI接口</li>
+<li>USB键盘和USB鼠标</li>
+<li>一台带HDMI接口的显示器</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+请轻轻插入 USB 线，否则可能会损坏接口。请使用内部有 4 根线的 USB 线，2 根线的不能传输数据。如果您不确定您的线，可以点击 <a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>此处</B></a> 购买
+</div>
+<h3 id="_2">镜像安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>与 Raspberry Pi 3B + 类似，您需要从 SD 卡安装 Raspberry Pi 4 B 映像才能启动并运行。目前我们只提供SD卡启动方式。</p>
+<p><strong>从 SD 卡启动</strong></p>
+<p><strong>步骤 1.</strong> 点击此处下载 <a href="https://downloads.raspberrypi.org/raspbian_full_latest">固件</a></p>
+<p><strong>步骤 2.</strong> 用 SD 读卡器将 SD 卡接入 PC 或 MAC。需要大于 4G 的 SD 卡。</p>
+<p><strong>步骤 3.</strong> <font face="">点击此处下载 <a href="https://etcher.io/">Etcher</a>，然后使用 Etcher 将 <code>*.img.xz</code> 文件直接写入到 SD 卡。或者将 <code>*.img.xz</code> 文件解压缩为 <code>*.img</code> 文件，然后用其他镜像写入工具将其刻录到 SD 卡。
+<br>
+<br>点击加号图标添加刚下载的镜像文件，软件会自动选择您插入的 SD 卡。然后点击 Flash！开始写入。大约需要 10 分钟完成。</font></p>
+<p><img alt="" src="https://github.com/SeeedDocument/Respeaker_V2/raw/master/img/v2-flash-sd.png" /></p>
+<p><strong>步骤 4.</strong> 将镜像写入 SD 卡后，将 SD 卡插入 Raspberry Pi 4 B。首先接上通过Micro HDMI转HDMI接口将Raspberry Pi 4 B的HDMI接口然后使用USB-C 接口对其进行供电，写入过程中请勿取出 SD 卡。Raspberry Pi 4 B 将从 SD 卡启动。</p>
+<p><img alt="" src="https://projects-static.raspberrypi.org/projects/raspberry-pi-setting-up/e22d152dd4f5bee4e6c932d716bc74c6a2098b69/en/images/pi-desktop.png" /></p>
+<p>假如您没有无屏幕和键盘也没有关系，您可以接着执行下面的操作也能达到控制访问树莓派的功能。</p>
+<p>假如使用我们配套的10寸屏幕，则需要下载 <a href="https://github.com/SeeedDocument/Raspberry-4-get-start/blob/master/config.txt">config.txt</a>,将/boot文件夹下面的config.txt覆盖掉。开机进行下图的屏幕配置即可
+<img alt="" src="https://github.com/SeeedDocument/Raspberry-4-get-start/raw/master/img/Screen-Config.jpg" /></p>
+<h3 id="wifissh">无屏幕和键盘配置树莓派WiFi和SSH<a class="headerlink" href="#wifissh" title="Permanent link">&para;</a></h3>
+<p>不算是什么新功能了，在树莓派3B发布后不久，树莓派官方 Raspbian 系统久加入了允许在开机前对 WiFi 网络进行配置的机制。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+这个方法仅适用于全新安装树莓派系统到 SD 卡之后没有做过任何 Wi-Fi 配置的情况下有效。如果你之前配置过 Wi-Fi，再用本方法系统会默认使用已有的配置而忽略这里的配置。因此建议使用前重新安装系统。
+</div>
+<p><strong>步骤 1.</strong> 用户可以在未启动树莓派的状态下单独修改 /boot/wpa_supplicant.conf 文件配置 WiFi 的 SSID 和密码，这样树莓派启动后会自行读取 wpa_supplicant.conf 配置文件连接 WiFi 设备。</p>
+<p>操作方法简单：将刷好 Raspbian 系统的 SD 卡用电脑读取。在 boot 分区，也就是树莓派的 /boot 目录下新建 wpa_supplicant.conf 文件，按照下面的参考格式填入内容并保存 wpa_supplicant.conf 文件。</p>
+<div class="codehilite"><pre><span></span><span class="nv">country</span><span class="o">=</span>CN
+<span class="nv">ctrl_interface</span><span class="o">=</span><span class="nv">DIR</span><span class="o">=</span>/var/run/wpa_supplicant <span class="nv">GROUP</span><span class="o">=</span>netdev
+<span class="nv">update_config</span><span class="o">=</span><span class="m">1</span>
+<p><span class="nv">network</span><span class="o">={</span>
+<span class="nv">ssid</span><span class="o">=</span><span class="s2">&quot;WiFi名称&quot;</span>
+<span class="nv">psk</span><span class="o">=</span><span class="s2">&quot;WiFi密码&quot;</span>
+<span class="nv">key_mgmt</span><span class="o">=</span>WPA-PSK
+<span class="nv">priority</span><span class="o">=</span><span class="m">1</span>
+<span class="o">}</span>
+</pre></div></p>
+<p>如果你不清楚 WiFi 的加密模式，可以在安卓手机上用 root explorer 打开 /data/misc/wifi/wpa/wpa_supplicant.conf，查看 WiFi 的信息。</p>
+<p><strong>步骤 2.</strong> 如果通过 ssh 连接树莓派出现 Access denied 这个提示则说明 ssh 服务没有开启。要手动开启的话，和 WiFi 配置相似，同样在 boot 分区新建一个文件，空白的即可，文件命名为 ssh。注意要小写且不要有任何扩展名。</p>
+<p><strong>步骤 3.</strong> 下载ssh访问工具，一般常使用的是 <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</a>。随后即可通过登录路由器找到树莓派的 IP 地址，通过 ssh 连接到树莓派了。</p>
+<p><img alt="" src="https://github.com/SeeedDocument/ReSpeaker_6-Mics_Circular_Array_kit_for_Raspberry_Pi/raw/master/img/putty.png" /></p>
+<p>进入终端后请输入用户名和密码，分别是‘pi’和‘raspberry’</p>
+<div class="codehilite"><pre><span></span>login as: pi
+pi@192.168.43.210&#39;s password:raspberry
+</pre></div>
+<h3 id="vnc">树莓派VNC服务<a class="headerlink" href="#vnc" title="Permanent link">&para;</a></h3>
+<p>假如您需要远程显示树莓派的桌面，那么我们需要进行vnc的配置。假如上面的教程顺利的话，你已经可以访问树莓派终端了。</p>
+<p><strong>步骤 1.</strong> 在终端输入以下命令进入配置界面</p>
+<p><div class="codehilite"><pre><span></span>sudo raspi-config
+</pre></div>
+<strong>步骤 2.</strong> 按照图片的顺序进行配置</p>
+<p><img alt="" src="https://github.com/SeeedDocument/Raspberry-4-get-start/raw/master/img/vnc_1.png" />
+<img alt="" src="https://github.com/SeeedDocument/Raspberry-4-get-start/raw/master/img/vnc_2.png" />
+<img alt="" src="https://github.com/SeeedDocument/Raspberry-4-get-start/raw/master/img/vnc_4.png" />
+<img alt="" src="https://github.com/SeeedDocument/Raspberry-4-get-start/raw/master/img/vnc_3.png" /></p>
+<p><strong>步骤 3.</strong> 下载 <a href="https://www.baidu.com/link?url=iW6RVDaZdafJwUX4boQhLuh7MNRw4HkAi4QgoqmnfDXU4bT46q_bCJmDjLUpERyvWlFnof0B4D4VDeaZYD51Ea&amp;wd=&amp;eqid=a185411b00045afd000000065d4beff3">Real vnc</a>安装并打开，输入树莓派的IP</p>
+<p><img alt="" src="https://github.com/SeeedDocument/Raspberry-4-get-start/raw/master/img/vnc_display.png" /></p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020/03/knowlage-is-free/">知识是自由和免费的，但获取知识的渠道不是</a></span>
+  <span class="nav-next"><a href="/cn/2020/03/hugo-config/">Hugo Config</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020\/03\/knowlage-is-free\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020\/03\/hugo-config\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+    this.page.url = "https:\/\/bingzhang.org" + location.pathname;
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//Bin1024.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+<script async src="/js/center-img.js"></script>
+
+<script async src="/js/right-quote.js"></script>
+
+<script async src="/js/no-highlight.js"></script>
+
+<script async src="/js/fix-footnote.js"></script>
+
+<script async src="/js/math-code.js"></script>
+
+<script async src="/js/external-link.js"></script>
+
+<script async src="/js/alt-title.js"></script>
+
+<script async src="/js/header-link.js"></script>
+
+<script async src="/js/tag.js"></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">© <a href="/">賓|Magicmoon</a> 1993 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

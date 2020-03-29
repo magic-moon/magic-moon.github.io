@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Stroage - 賓 | Magicmoon</title>
+    <meta property="og:title" content="Stroage - 賓 | Magicmoon">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="说起Android“内部存储”，对于开发者而言可以毫不犹豫地脱口而出，不就是/data/data目录嘛，也不尽然，/data/user/0/又如何解释？那说起“外部存储”，例如sd卡目录获取值，更是众说纷纭，是/mnt/sdcard？还是/storage/sdcard0？莫非是/storage/emulated/0？
+此疑问起源要追溯到笔者在写上一篇博文，即以DexClassLoader类加载原理 &amp;hellip;">
+      <meta property="og:description" content="说起Android“内部存储”，对于开发者而言可以毫不犹豫地脱口而出，不就是/data/data目录嘛，也不尽然，/data/user/0/又如何解释？那说起“外部存储”，例如sd卡目录获取值，更是众说纷纭，是/mnt/sdcard？还是/storage/sdcard0？莫非是/storage/emulated/0？
+此疑问起源要追溯到笔者在写上一篇博文，即以DexClassLoader类加载原理 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://bigzhang.org/images/logo.png">
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+<script async src="/js/load-typekit.js"></script>
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.png" alt="Bin Zhang" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/about/">关于</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/cn/recipe/">菜谱</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/magic-mooncn/2020-03-23-stroage.md" target="_blank">编辑</a></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Stroage</h1>
+
+
+<h3>張賓 / 
+2020-03-22</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<div id="content_views" class="markdown_views clearfix prism-atom-one-dark"><link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/production/wapedit_views_md-f62139723e.css" /><p>说起Android“内部存储”，对于开发者而言可以毫不犹豫地脱口而出，不就是<code>/data/data</code>目录嘛，也不尽然，<code>/data/user/0/</code>又如何解释？那说起“外部存储”，例如sd卡目录获取值，更是众说纷纭，是<code>/mnt/sdcard</code>？还是<code>/storage/sdcard0</code>？莫非是<code>/storage/emulated/0</code>？</p>
+<p>此疑问起源要追溯到笔者在写上一篇博文，即<a href="http://blog.csdn.net/itermeng/article/details/79362042" target="_blank">以DexClassLoader类加载原理编写demo实现类替换修复</a>，其中编码过程中涉及到读写Android内外存储的文件数据，逻辑就是读取外部存储sd卡上的dex文件，写入到内部存储对应的app包下的一个自定义目录中。</p>
+<p>以上逻辑并不复杂，但是笔者用模拟器和不同版本的Android真机测试时，发现这获取sd卡的路径却各不相同，思索不解一个百度，发现其中大有文章，<font color="#f00">有的目录只是链接，是个软连接，而大部分原因需归咎于Android版本更新中“多用户”的新特性出现，Google对用户的数据结构进行了调整。<font color="#000">可具体实情如何，请看以下解说：</font></font></p>
+<p>本篇博文涉及到的知识点如下：</p>
+<ul>
+<li>Android内、外部存储基础知识点及文件夹所在位置</li>
+<li>存储路径中“0”的含义与变化</li>
+<li>多种sd卡路径表示含义与区别</li>
+</ul>
+<hr>
+<h2 id="一-android内外存储基础知识"><strong>一. Android内外存储基础知识</strong></h3>
+<p>Android手机上的存储空间可做如下划分：</p>
+<ul>
+<li>内存：RAM</li>
+<li>内部存储：内部ROM</li>
+<li>外部存储：外部ROM和SDCard</li>
+</ul>
+<p>手机上的存储在概念上分成了”<strong>内部internal</strong>“和”<strong>外部external</strong>“两部分，但其实都在手机内部。因此无论Android手机是否有可移动的sdcard，它都有外部存储和内部存储，且通过相同的Api方法来访问可移动的sdcard或者手机自带的存储。</p>
+<p><font color="#000"><strong>（1）内部存储：</strong></font></p>
+<p>Android可以说是一个Linux操作系统，它的内部存储空间对于应用程序和用户来讲就是“<code>/data/data</code>“目录。内部存储与外部存储相比有着比较稳定，存储方便，操作简单，更加安全（可以控制访问权限）等优点，而它唯一的缺点就是空间有限。</p>
+<p>内部存储空间的有限意味着应物尽其用，用来保存比较重要的数据，例如用户信息资料，口令秘码等不需要与其他应用程序共享的数据。<font color="#f00">注意应用程序被卸载时，应用程序在内部存储空间的文件数据将全部被删除，避免占用宝贵的空间。</font></p>
+<p>内部存储即data文件夹，其中里面有两个文件夹值得关注：</p>
+<ul>
+<li><strong>app文件夹</strong>（未root无法打开）：存放着所有app的apk文件夹，当开发者调试某个app时，AS控制台输出的内容中有一项是uploading…，代表正在上传apk到这个文件夹。 </li>
+<li><strong>data文件夹：</strong>内部都是app的包名，存储着应用程序相关的数据，例如 <code>data/data/包名/(shared_prefs、database、files、cache)</code></li>
+</ul>
+<p><img src='https://csdnimg.cn/release/phoenix/write/assets/img_default.png' data-src='https://img-blog.csdn.net/20180227162345117?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSVRlcm1lbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast'  alt="这里写图片描述" title=""></p>
+<p><font color="#000"><strong>（2）外部存储</strong></font></p>
+<p>外部存储是指用户在使用时自行在手机上添加的外部存储介质，例如TS卡，SD卡等闪存储介质。其显著的优点就是存储空间大，无需担心数据清除问题，<font color="#f00">与内部存储不同的是当应用程序卸载时，它在外部存储所创建的文件数据不会被清除，因此清理外部存储空间的责任丢给了用户自己。<font color="#000">缺点则是不太稳定，闪存介质对于Android手机而言会出现SD卡不能正常使用的情况。</font></font></p>
+<p>外部存储即storage文件夹或mnt文件夹。需要注意的是<strong>storage</strong>中有一个sdcard0文件夹，其中又分为<strong>公有目录</strong>和<strong>私有目录</strong>：</p>
+<ul>
+<li><strong>公有目录：</strong>有9大类，比如DCIM、Download等系统为用户创建的文件夹；</li>
+<li><strong>私有目录：</strong><font color="#f00">  即Android文件夹<code>/storage/sdcard/Android/</code>，其中的data文件夹包含了许多包名组成的文件夹。</font></li>
+</ul>
+<p><img src='https://csdnimg.cn/release/phoenix/write/assets/img_default.png' data-src='https://img-blog.csdn.net/20180227170015515?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSVRlcm1lbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast'  alt="这里写图片描述" title=""></p>
+<p>若应用程序在运行过程中需要向手机上保存数据，通常是保存在sdcard中<code>/storage/sdcard</code>，<font color="#f00">即应用直接在sdcard的根目录创建一个文件夹用于数据保存，不过当该app被卸载后，数据还保留在sdcard中，意味着留下了垃圾数据。</font></p>
+<blockquote>
+  <p>在开发中，Google官方建议App数据存储在<font color="#f00">外部存储的私有目录中对应App的包名下<code>storage/sdcard/Android/data/包名/</code>，这样当用户卸载掉App之后，相关的数据会一并删除！</font></p>
+</blockquote>
+<p><font color="#000"><strong>（3）内外部存储常用目录操作</strong></font></p>
+<ul>
+<li><code>context.getFilesDir()</code> 内部存储data/data/包名/files目录</li>
+<li><code>context.getCacheDir()</code> 内部存储data/data/包名/cache目录</li>
+<li><code>Environment.getExternalStorageDirectory()</code> 外部存储根目录</li>
+<li><code>Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DCIM)</code> 外部存储公有目录</li>
+<li><code>context.getExternalFilesDir()</code> 外部存储私有目录storage/sdcard/Android/data/包名/files。<font color="#f00">一般存储长时间保存的数据。</font></li>
+<li><code>context.getExternalCacheDir()</code> 外部存储私有目录storage/sdcard/Android/data/包名/cache。<font color="#f00">一般存储临时缓存数据。</font></li>
+</ul>
+<p><strong>注意上述最后两个API：</strong><font color="#f00">当app被卸载后，<code>sdCard/Android/data/PackageName/</code>下的所有文件都会被删除，不会留下垃圾信息。两个API对应的目录分别对应着 <code>设置-&gt;应用-&gt;应用详情</code>里面的“清除数据”与“清除缓存”选项。</font></p>
+<hr>
+<hr>
+<hr>
+<h1 id="二-各个易混淆路径识别"><strong>二. 各个易混淆路径识别 </strong></h1>
+<h3 id="1-文件夹中0的出现"><strong>1. 文件夹中0的出现</strong></h3>
+<p>在Android版本4.2JellyBean之前，获取sdcard的路径是<code>/sdcard/</code>，但在JellyBean版本之后的路径成为了<code>/sdcard/0</code>，或者是<code>/sdcard/legacy</code>（legacy可以是0、1、2……），这个“0”到底代表着什么含义？</p>
+<blockquote>
+  <p>这是从JellyBean版本起的一个新特征——多用户。因此为了处理单独的账户，部分目录结构必须被改变，<code>/sdcard/legacy</code>始终指向当前登录的用户的SD卡目录。</p>
+</blockquote>
+<p>正因“多用户”功能的增加，内外部存储发生了以下变化：</p>
+<ul>
+<li><strong>内部存储：</strong> 原先的<code>/data/data/</code>其实相当于直接链接到当前用户文件夹的，变成了<code>/data/user/0/</code>。</li>
+<li><strong>外部存储：</strong>例如sd卡路径不再是<code>/sdcard/</code>，而是<code>/sdcard/legacy/</code>（legacy可以是0、1、2……），其中的“0”可以当成“设备拥有者”，或者称为“第一用户”（“第一用户”毫无疑问的是“设备所有者”，只有此用户才能创建额外账户）。</li>
+</ul>
+<p>大致理解了其由来后，可能少数人还遇到过<code>/sdcard/0/0</code> 这种表示，以下是谷歌对此的官方解释：</p>
+<p>Google在Android 4.2中引入了“多个用户”作为新功能， 为了适应“多个用户”，Google现在为每个用户提供了自己的文件夹以供存储。 如果您从4.1升级到4.2，则4.2 ROM将在<code>/data</code>中查找某个文件，以确定是否需要将所有文件迁移到新的多用户数据结构。 <font color="#f00">默认情况下，4.2将所有<code>/data/media</code>迁移到<code>/data/media/0</code>。<font color="#000">不过使用自定义恢复会出现问题，自定义恢复在出厂重置期间会保留<code>/data/media</code>文件夹。<font color="#f00">当您重新设置工厂并再次启动4.2 ROM时，4.2 ROM将再次迁移<code>/data/media</code>中的所有内容。 每次出厂重置时它都会迁移您的文件，这种多次迁移会导致一些人将他们的文件移动到<code>/sdcard/0</code>甚至<code>/sdcard/0/0</code>等等。</font></font></font></p>
+<hr>
+<hr>
+<h3 id="2-sd卡路径随着android版本变化"><strong>2. sd卡路径随着Android版本变化</strong></h3>
+<pre class="prettyprint"><code class=" hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SDPATH = Environment .getExternalStorageDirectory().getAbsolutePath();<span class="hljs-comment">//获取外部存储的路径返回绝对路径的,就是你的设备SD卡的文件路径</span></code></pre>
+<p>如上是获取SD卡目录的Api，你会发现使用不同Android移动设备得到的sd卡目录不同，不仅如此，其中路径指向的都是相同的文件，缘由为何？</p>
+<pre class="prettyprint"><code class=" hljs coffeescript"><span class="hljs-regexp">/sdcard/</span>
+<span class="hljs-regexp">/mnt/sdcard/</span>
+<span class="hljs-regexp">/storage/sdcard0/</span>
+<span class="hljs-regexp">/storage/emulated/legacy/</span></code></pre>
+<p>上面四个皆指代sd卡路径，其中演变的由来见以下Android版本分享：</p>
+<p><font color="#000"><strong>（1）android 4.0</strong> </font></p>
+<p>Galaxy Nexus(GN)手机上的userData分区很大，被挂在<code>/data</code> 目录下。用户的数据通常是存储在SD卡上，可是GN无SD卡，即只有intenal内部存储。（第四点中会讲解Galaxy Nexus为何只有内部存储缘由）</p>
+<p>Google爸爸并未被眼前困难打倒，直接<font color="#f00">在userData分区下虚拟了一个media目录，它是是内置sd卡的数据存储位置，<font color="#000">具体使用了fuse技术将<code>/data/media</code>虚拟成为一个叫做<code>/dev/fuse</code>的设备，为了让程序能认出来，被同时挂载在 <code>/mnt/sdcard</code> 目录，又为了兼容以前的程序，做了一个快捷方式（linux系统里叫软连接），<font color="#f00"><strong>因此 <code>/sdcard</code> 指向的就是 <code>/mnt/sdcard</code>。</strong></font></font></font></p>
+<hr>
+<p><font color="#000"><strong>（2）android 4.1</strong> </font></p>
+<p>以上是Android 4.0的应对措施，在4.1中同样使用fuse技术，<font color="#f00"><code>/dev/fuse</code> 会被同时挂载到<code>/storage/sdcard0</code> 目录。“sdcard0”表示第一个sd卡（若有外置sd卡，那会多一个 <code>/storage/sdcard1</code>） <code>/sdcard</code> 软连接会指向 <code>/storage/sdcard0</code> ，此时<code>/mnt/sdcard</code> 也是个软连接，会指向<code>/storage/sdcard0</code>。</font></p>
+<blockquote>
+  <p>因此<code>/storage/sdcard0</code>才是最终源头，<code>/sdcard</code>、<code>/mnt/sdcard</code>是指向它的一个软连接而已。</p>
+</blockquote>
+<p>如果你通过otg线接U盘，会被挂载到 <code>/storage/usb0</code>目录，stickmount这个软件为了让图库、快图、mx player等软件，能看到u盘里的数据，又同时挂载到 <code>/storage/sdcard0/usStorage/sda1</code>。为何命名为“usb0”，而不是“sda1”？</p>
+<p>这是Linux的对硬盘的命名方式，如果你的u盘有多个分区，就分别是按sda1、sda2此规律命名下去。</p>
+<hr>
+<p><font color="#000"><strong>（3）android 4.2及之后</strong> </font></p>
+<p>在4.2之后，Android出现了一个“多用户”的功能特征，意味着一台设备可能被多个人同时应用，因此需要将每个人的数据、应用、个性配置分开。后两者容易实现，通过权限控制即可，可是数据这一块如何是好？</p>
+<p>面对需求的变更，<font color="#f00">只好再调整用户数据的挂载结构，4.2版本中同样使用fuse技术，而<code>/dev/fuse</code> 会被挂载到<code>/storage/emulated/0</code> 目录。<font color="#000">（若有多个用户，0文件夹名称依次增加，例如<code>/storage/emulated/1</code>）</font></font></p>
+<p><font color="#f00">不仅如此，为了兼容Android版本升级，还同时挂载到<code>/storage/emulated/legacy</code>，建立了三个软连接指向自己：</font></p>
+<ul>
+<li><code>/storage/sdcard0</code></li>
+<li><code>/sdcard</code></li>
+<li><code>/mnt/sdcard</code></li>
+</ul>
+<hr>
+<p><font color="#000"><strong>（4）不要太在意“0”</strong></font></p>
+<p>也许在手机设备开发中似乎没太注意到“多用户”新特性的作用，无需太过在意，它主要在平板上使用，手机端是禁用的，但底层实现原理相同。 <br>
+<font color="#f00"><strong><code>/mnt/shell/emulated</code> 目录和 /<code>storage/emulated</code> 下的文件夹是一样的。</strong></font></p>
+<p>（此点“版本总结”来源于<a href="http://bbs.gfan.com/android-5382920-1-1.html" rel="nofollow" target="_blank">机锋论坛之关于android的4.2的0文件夹的详解</a>，笔者稍有修改）</p>
+<hr>
+<hr>
+<h3 id="3-多种sd卡路径表示的区别总结"><strong>3. 多种sd卡路径表示的区别总结</strong></h3>
+<p>在上一点中了解了表示sd卡几种路径的演变过程，此部分对以下几个路径进行简单总结区别：</p>
+<p><font color="#f00">（注意：下面路径中的文件夹相同）</font></p>
+<pre class="prettyprint"><code class=" hljs coffeescript"><span class="hljs-regexp">/sdcard/</span>
+<span class="hljs-regexp">/storage/sdcard0/</span>
+<span class="hljs-regexp">/storage/emulated/0/</span>
+<span class="hljs-regexp">/storage/emulated/legacy/</span></code></pre>
+<ul>
+<li><code>/sdcard/</code>：只是一个符号链接，链接到<code>/storage/sdcard0/</code> <br>
+<ul><li><code>/mnt/sdcard</code>：Android4.0版本之前的显示</li>
+<li><code>/storage/sdcard0</code> ：Android4.0版本之后的显示</li></ul></li>
+<li><code>/storage/emulated/0/</code>：这是参照“emulated MMC”，通常指其内部，“0”代表第一个用户，即设备拥有者。 如果您创建其他用户，则此数字将为每个用户增加。</li>
+<li><code>/storage/emulated/legacy/</code>：与上同理，但指向当前工作用户的部分。（对于“0”用户而言，这是<code>/storage/emulated/0/</code>的符号链接）</li>
+<li><code>/storage/sdcard0/</code>：注意这里的“0”并非是一个单独文件夹名，而是作为后缀一样，意味着“0”并不代表用户，而是设备（卡）本身，因此它不需要legacy链接。人们可以通过OTG将读卡器与另一个SD卡连接起来，然后路径将成为<code>/storage/sdcard1/</code>。</li>
+</ul>
+<blockquote>
+  <p><font color="#f00">为了兼容Android版本升级，还同时挂载到<code>/storage/emulated/legacy</code>，建立了三个软连接指向自己：<code>/storage/sdcard0</code> 、<code>/sdcard</code>、<code>/mnt/sdcard</code>。</font></p>
+</blockquote>
+<p><strong>sdcard0名称变化</strong></p>
+<p><strong>“sdcard”</strong>这个文件夹是手机外置SD卡的文件夹名称，<strong>“sdcard0”</strong>这个文件夹是手机内存文件夹名称。手机内存本身是无法扩展的，但是外置SD卡的空间用户可以根据手机最大使用限制购买更换。因此<strong>“sdcard0”</strong>是内置储存，<strong>“sdcard1”</strong>是扩展储存，就是一般的sd卡。</p>
+<p>如果更多的设备连接，但命名可能会有所不同，取决于设备：</p>
+<ul>
+<li>当内部虚拟SD卡：<code>/mnt/sdcard0/</code></li>
+<li>SD插槽中的物理SD：<code>/mnt/sdcard1/</code></li>
+<li>可调用其他设备，如连接适配器的USB闪存驱动器：<code>/mnt/media_rw/usbdisk</code>（kitkat 4.4及以上？）或<code>/mnt/usbdisk</code>（jellybean 4.1 - 4.2）</li>
+</ul>
+<blockquote>
+  <p>命名可能取决于设备、制造商、 ROM等， 但通常情况下，<font color="#f00"><code>/mnt/*</code>在所有这些情况下只是一个符号链接，而源头是位于<code>/storage</code>路径下。</font></p>
+</blockquote>
+<p>（此点回答来自于<a href="https://android.stackexchange.com/questions/39542/confused-by-the-many-locations-of-the-virtual-sdcard?noredirect=1#" rel="nofollow" target="_blank">StackExchange</a>，结合自身理解翻译叙述）</p>
+<hr>
+<hr>
+<h3 id="4-sdcard是一个假路径">4. “/sdcard/”是一个“假”路径？</h3>
+<p>上一点解决了各个路径的识别问题，可仍剩下一个疑惑：Glaxy Nexus没有用于SD卡的外部插槽，即只有内部存储，但它仍有一个名为<code>/sdcard/</code>的根文件夹（第二点中的(1)部分已简单解释了原因），详情为何？以下是Google工程师回应<font color="#f00">Galaxy Nexus背后缺乏USB大容量存储的理由，即Android为什么从USB大容量存储转移到内部存储的MTP访问的解释，<strong>可以揭秘为何GN中<code>/sdcard/</code>“假”路径的问题。</strong></font></p>
+<blockquote>
+  <p>UMS：通信技术； <br>
+  MTP：multi-path transmission网络传输机制，多路径传输是指采用多条不相交的路径来投递应用分组以增加连接的容量和可靠性的机制； <br>
+  ICS：Internet连接共享</p>
+</blockquote>
+<p>Galaxy Nexus不支持USB海量存储（UMS），即不支持USB存储模式，<font color="#000">这给许多用户带来了震撼。 所有拥有XOOM，Nexus S，Galaxy Tab 10.1或任何缺少SD卡插槽的设备的人都熟悉这种设置，因为上述所有设备的工作方式与Galaxy Nexus类似，都是使用MTP网络传输机制而不是UMS通信技术。以下Google工程师回应了Galaxy Nexus相关问题：</font></p>
+<p><strong>Q：</strong> ICS不支持USB大容量存储？</p>
+<p><strong>A：</strong> ICS支持USB海量存储（UMS）， Galaxy Nexus不会，这与Honeycomb（蜂巢）相同，例如HC支持USB大容量存储，而Xoom不支持。</p>
+<p>如果给定设备有可移动的SD卡，它将支持USB大容量存储。如果设备只有内置存储（如Xoom、Galaxy Nexus），它通常仅支持MTP和PTP。<font color="#f00">在没有专用存储分区的设备上（如可移动SD卡或像Nexus S这样的单独分区），在物理上不可能支持UMS。这是因为UMS是块级协议，主机PC直接访问存储上的物理块，以便Android不能同时安装它。</font></p>
+<p>通过我们在Honeycomb中引入的统一存储模型，可以在应用程序数据和媒体数据之间分享完整的32GB（或16GB其他），即当您的内部应用数据分区已满时，Nexus S上的5GB免费空间不会再无所事事。<font color="#f00"><strong>然而这样的代价是，Android不能再为主PC直接通过USB传输存储。</strong>相反使用MTP。在Windows（大多数用户使用）上，它在资源管理器中内置了MTP支持，使其看起来完全像磁盘。（Linus和Mac上没那么容易，sad）</font></p>
+<p>总体而言，这是一个更好的手机体验。</p>
+<hr>
+<p><strong>Q：</strong> 由于Galaxy Nexus仅具有内部存储，因此ASTRO文件管理器等应用程序如何在不需要root权限的情况下工作？</p>
+<p><strong>A：</strong>首先我们<font color="#f00">在内部存储器上指定一个特定的目录作为“SD卡”， 然后实现了一个FUSE文件系统<font color="#000">，除了丢弃所有权限检查之外，什么也不做，<font color="#f00">除非重新将该目录挂载为<code>/sdcard</code><font color="#000">。 除了权限之外，FUSE文件系统是直通的，因此实际的文件可以从目录中读取或写入目录。</font></font></font></font></p>
+<p>我们<font color="#f00">使用“假代理” FUSE文件系统来重新安装特定的目录以伪装成SD卡，<font color="#000"> 这对于应用程序来说是完全透明的，他们不能说没有直接与磁盘通话。</font></font></p>
+<p>（阅读自此，GN中为何有<code>/sdcard/</code> 这个“假”路径的秘密已经被揭开，下一个Q&amp;A则是帮助开发者更深入理解Glaxy Nexus为何舍弃USB大容量存储，他们考虑的思路又是如何？）</p>
+<hr>
+<p><strong>Q：</strong> Galaxy Nexus这么做也许有它的理由，可是Micro-SD卡插槽需要多少空间？为何不可两者兼得？</p>
+<p><strong>A：</strong>舍弃SD卡插槽主要原因并不在硬件上，而是没有一个适合的使用UI。<font color="#f00">Android核心原则之一是你永远不需要文件管理器，因此我们想要避开其他操作系统的一个综合症——文件选择器。app应该知道如何处理它的本地数据，即存储在本地或者云端，而不是搜查你的Micro-SD卡来获取数据。</font></p>
+<p>同时拥有内部存储和SD卡的这个目标确实有些难以实现，例如指定的相片，相机应该保存在内部的16GB还是SD卡？市场中的app应该安装到内部存储还是SD？诸如此类等等。没错，你也许会说一个简单的选择或者设置即可解决，但那样类似于文件选择器的体验并非是我们的理想期望。除此缺点之外，还要考虑到API，若用户在SD卡上存储照片，是否将其添加到系统媒体内容提供商？如果需要的话这对app而言是个灾难，因为他们没有操作照片来去这种概念。</p>
+<p>而我们最终可能做的是<font color="#f00">将“导入/导出”这种概念添加到可移动存储。因此相机将始终保存到内部存储中，并且当您弹出SD卡时（或在USB主机设备上插入拇指驱动器），您可以启动“”迁移或“导入/导出”对话框。</font></p>
+<p>（此点Q&amp;A来源于<a href="https://www.androidpolice.com/2011/11/18/impromptu-qa-session-with-android-engineer-dan-morrill-brings-to-light-reasons-behind-galaxy-nexus-lack-of-usb-mass-storage/" rel="nofollow">androidpolice新闻</a>，结合自身理解翻译叙述）</p>
+<hr>
+<hr>
+<hr>
+<p>Android开发中有一个隐性的问题，就是市面上各个手机的Android版本并不统一。会被不同版本所影响的逻辑处理，开发人员需要做好兼容处理，去适应市场上大部分机型，例如此篇文章的混淆点。</p>
+<p>此篇文章主要的疑问通过搜索多篇文章最终解决，其中涉及到不少英文网站，例如StackOverflow、Stack Exchange，还有国内的论坛、博客等等，知识开源的感觉还是很棒的，虽然国内还是偏少，共勉～</p>
+<p>若翻译、理解有误，虚心指教～</p></div>
+<p>原文链接：<a href="https://blog.csdn.net/ITermeng/article/details/79423035"><a href="https://blog.csdn.net/ITermeng/article/details/79423035">https://blog.csdn.net/ITermeng/article/details/79423035</a></a></p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020/03/hugo-config/">Hugo Config</a></span>
+  <span class="nav-next"><a href="/cn/2020/03/covid-19/">疫情之下</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020\/03\/hugo-config\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020\/03\/covid-19\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+    this.page.url = "https:\/\/bingzhang.org" + location.pathname;
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//Bin1024.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+<script async src="/js/center-img.js"></script>
+
+<script async src="/js/right-quote.js"></script>
+
+<script async src="/js/no-highlight.js"></script>
+
+<script async src="/js/fix-footnote.js"></script>
+
+<script async src="/js/math-code.js"></script>
+
+<script async src="/js/external-link.js"></script>
+
+<script async src="/js/alt-title.js"></script>
+
+<script async src="/js/header-link.js"></script>
+
+<script async src="/js/tag.js"></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">© <a href="/">賓|Magicmoon</a> 1993 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
