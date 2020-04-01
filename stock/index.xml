@@ -6,10 +6,19 @@
     <description>Recent content in Stocks on 賓 | Magicmoon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 08:48:52 +0000</lastBuildDate>
     
 	<atom:link href="https://bigzhang.org/stock/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新基建</title>
+      <link>https://bigzhang.org/stock/new-base-build/</link>
+      <pubDate>Wed, 01 Apr 2020 08:48:52 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/stock/new-base-build/</guid>
+      <description>美国在经济大萧条时期，通过搞基础建设恢复了元气。 搞基础设施建设的好处就是，解决了失业的问题，盘活了经济，促进了现金的流动。 那要是基础建设已经</description>
+    </item>
     
     <item>
       <title>Basic</title>
@@ -17,7 +26,7 @@
       <pubDate>Wed, 25 Mar 2020 07:36:27 +0000</pubDate>
       
       <guid>https://bigzhang.org/stock/basic/</guid>
-      <description>北向资金净流入 通过沪港通、深港通买卖A股叫北向资金。</description>
+      <description>北向资金净流入 通过沪港通、深港通买卖A股叫北向资金。此乃众多中国特色中的一个特色。 而我是才知道的。</description>
     </item>
     
   </channel>
