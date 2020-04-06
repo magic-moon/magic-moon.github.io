@@ -6,10 +6,37 @@
     <description>Recent content in Cns on 賓 | Magicmoon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 09:45:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 17:35:57 +0000</lastBuildDate>
     
 	<atom:link href="https://bigzhang.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>劳动</title>
+      <link>https://bigzhang.org/cn/2020/04/work/</link>
+      <pubDate>Mon, 06 Apr 2020 17:35:57 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/04/work/</guid>
+      <description>何为工作？读书学习，算不算得工作。凡工作的都可量化，也因此学习也算的工作。无所事事，便是休息，时之以长，便成怠惰。 经云 工作之中，意义无穷 工作</description>
+    </item>
+    
+    <item>
+      <title>Svg Pictrue</title>
+      <link>https://bigzhang.org/cn/2020/04/svg-pictrue/</link>
+      <pubDate>Mon, 06 Apr 2020 01:44:11 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/04/svg-pictrue/</guid>
+      <description>SVG1 一个圆和一个矩形 &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; version=&amp;#34;1.1&amp;#34;&amp;gt; &amp;lt;ellipse cx=&amp;#34;51&amp;#34; cy=&amp;#34;51&amp;#34; r=&amp;#34;50&amp;#34; rx=&amp;#34;50&amp;#34; stroke=&amp;#34;blue&amp;#34; stroke-width=&amp;#34;2&amp;#34; fill=&amp;#34;red&amp;#34; /&amp;gt; &amp;lt;rect x=&amp;#34;110&amp;#34; y=&amp;#34;20&amp;#34; width=&amp;#34;300&amp;#34; height=&amp;#34;100&amp;#34; style=&amp;#34;fill:rgb(df,df,df);stroke-width:1;stroke:rgb(255,0,0)&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; 一个带圆角的矩形 &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; version=&amp;#34;1.1&amp;#34;&amp;gt; &amp;lt;rect x=&amp;#34;0&amp;#34; y=&amp;#34;0&amp;#34; width=&amp;#34;200&amp;#34; height=&amp;#34;200&amp;#34; style=&amp;#34;fill:rgb(df,df,df);stroke-width:1;stroke:rgb(255,0,0)&amp;#34; /&amp;gt; &amp;lt;rect x=&amp;#34;50&amp;#34; y=&amp;#34;20&amp;#34; rx=&amp;#34;20&amp;#34; ry=&amp;#34;20&amp;#34; width=&amp;#34;150&amp;#34; height=&amp;#34;150&amp;#34; style=&amp;#34;fill:red;stroke:black;stroke-width:5;opacity:0.5&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; 一个椭圆 &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; version=&amp;#34;1.1&amp;#34;&amp;gt; &amp;lt;ellipse cx=&amp;#34;150&amp;#34; cy=&amp;#34;75&amp;#34; rx=&amp;#34;100&amp;#34; ry=&amp;#34;50&amp;#34; style=&amp;#34;fill:yellow;stroke:purple;stroke-width:2&amp;#34;</description>
+    </item>
+    
+    <item>
+      <title>混乱还是有序</title>
+      <link>https://bigzhang.org/cn/2020/04/chaos-and-order/</link>
+      <pubDate>Sat, 04 Apr 2020 10:01:51 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/04/chaos-and-order/</guid>
+      <description>当信息太繁杂的时候，如何找到一点平静呢？ 任由自己去浏览混乱的信息，可能造成的是更大的混乱，也许这时候静一静才会好一点。放空大脑🧠，什么也别想</description>
+    </item>
     
     <item>
       <title>红色蒲公英——紫天使</title>
@@ -31,10 +58,10 @@
     
     <item>
       <title>BiBTeX制作参考文献</title>
-      <link>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</link>
+      <link>https://bigzhang.org/cn/2020/03/bibtex/</link>
       <pubDate>Thu, 26 Mar 2020 09:38:25 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</guid>
+      <guid>https://bigzhang.org/cn/2020/03/bibtex/</guid>
       <description>使用bibtex编译辅助文件,aux发现aux文件名如果是中文就不能编译。</description>
     </item>
     
