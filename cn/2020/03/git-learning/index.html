@@ -84,7 +84,7 @@
 
 
 
-<li><a href="https://github.com/rbind/yihui/edit/master/content/cn/2020-3-24-git-learning.md" target="_blank">编辑</a></li>
+<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn/2020-3-24-git-learning.md" target="_blank">编辑</a></li>
 
 
 <li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -103,7 +103,7 @@
 <h1>Git Learning</h1>
 
 
-<h3>张中魁 / 
+<h3>張賓 / 
 2020-03-24</h3>
 
 <hr>
@@ -148,6 +148,11 @@
 <p>git rm -r &ndash;cached .</p>
 <p>清空暂存区，再重新添加。</p>
 <p>阿里技术<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>有一篇文章对概念解释的比较清楚，不过看不懂，看起来都头大</p>
+<h2 id="添加远程仓库">添加远程仓库</h2>
+<p>git的最大优势就是他的分支仓库</p>
+<pre><code>git remote add github git@github.com:magic-moon/bigzhang.git
+</code></pre><p>关联后，使用命令<code>git push -u github master</code>第一次推送master分支的所有内容；</p>
+<p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push github master</code>推送最新修改；</p>
 <h2 id="参考">参考:</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -162,7 +167,7 @@
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/cn/1/01/"></a></span>
+  <span class="nav-prev"></span>
   <span class="nav-next"><a href="/cn/2020/03/lite-raspbereypi/">Lite版树莓派系统使用日志</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
@@ -170,8 +175,6 @@ document.addEventListener('keyup', function(e) {
   if (e.target.nodeName.toUpperCase() != 'BODY') return;
   var url = false;
   if (e.which == 37) {  
-    
-    url = '\/cn\/1\/01\/';
     
   } else if (e.which == 39) {  
     
