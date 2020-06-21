@@ -397,6 +397,20 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
     </item>
     
     <item>
+      <title>English</title>
+      <link>https://bigzhang.org/en/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>Bin Zhang</author>
+      <guid>https://bigzhang.org/en/</guid>
+      <description>
+        
+        
+        &lt;script&gt;location.href=&#39;https://bigzhang.org/en/&#39;;&lt;/script&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>中文日志</title>
       <link>https://bigzhang.org/cn/</link>
       <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
@@ -415,42 +429,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       
       <guid>https://bigzhang.org/en/about/</guid>
       <description>
-        &lt;p&gt;My name is Bin Zhang. You can know more about me on the &lt;a href=&#34;https://bigzhang.org/&#34;&gt;homepage&lt;/a&gt; and my &lt;a href=&#34;../vitae/&#34;&gt;vitae&lt;/a&gt;. This blog is about statistics, R, graphics, life, and fun, with a special focus on R. I often update my old posts (even after years) to correct errors and remove outdated information, so please don&amp;rsquo;t take everything for granted. All opinions expressed here are my own, and I don&amp;rsquo;t represent anyone else. I like contributing to open-source software, especially &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; (I&amp;rsquo;m the author of a few R packages listed on my vitae). I have an interview on &lt;a href=&#34;https://usesthis.com/interviews/yihui.xie/&#34;&gt;The Setup&lt;/a&gt; where you can learn more about me on the software side.&lt;/p&gt;
-&lt;h2 id=&#34;contact-me&#34;&gt;Contact me&lt;/h2&gt;
-&lt;p&gt;You can find me on &lt;a href=&#34;https://github.com/yihui/&#34;&gt;GitHub&lt;/a&gt; (where I&amp;rsquo;m active almost every day) or Twitter &lt;a href=&#34;http://twitter.com/xieyihui&#34;&gt;@xieyihui&lt;/a&gt; (I only read Twitter once a week). Subscribe to the RSS feed of &lt;a href=&#34;../index.xml&#34;&gt;blog posts&lt;/a&gt; or &lt;a href=&#34;https://yihui.disqus.com/latest.rss&#34;&gt;all comments&lt;/a&gt; to stay tuned. I used to provide a &lt;a href=&#34;../guestbook/&#34;&gt;guestbook&lt;/a&gt; page for people to leave me messages, but now I think it makes more sense just to leave comments on this page. I don&amp;rsquo;t like formality, so it is not necessary to call me &amp;ldquo;Dr Xie&amp;rdquo; when you email me or introduce me to your friends. I&amp;rsquo;m a software engineer, so please don&amp;rsquo;t call me professor.&lt;/p&gt;
-&lt;p&gt;Usually I don&amp;rsquo;t like private emails of questions about open-source packages. It is not practical for me to answer all of them, and emails often make me feel stressed. Don&amp;rsquo;t get me wrong&amp;mdash;I do like questions, but I&amp;rsquo;ll be glad to see questions about open-source packages (like R) posted on Stack Overflow, and I watch them closely almost every day. Please feel free to email me the link to your question if nobody has answered you after a few days. Knowledge should be open to the public whenever possible, and I&amp;rsquo;d like to use emails only for &lt;em&gt;private&lt;/em&gt; conversations (more explanations in &lt;a href=&#34;https://bigzhang.org/en/2017/08/so-gh-email/&#34;&gt;this post&lt;/a&gt;). BTW, when you say you have &amp;ldquo;&lt;a href=&#34;https://bigzhang.org/en/2018/07/quick-questions/&#34;&gt;a quick question&lt;/a&gt;&amp;rdquo;, please make sure it is really quick, so I don&amp;rsquo;t have to doubt if I&amp;rsquo;m too dumb.&lt;/p&gt;
-&lt;h2 id=&#34;about-this-site&#34;&gt;About this site&lt;/h2&gt;
-&lt;p&gt;This site is created with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; and the theme is &lt;a href=&#34;https://github.com/yihui/hugo-ivy&#34;&gt;hugo-ivy&lt;/a&gt;, a Hugo theme that I ported from &lt;a href=&#34;https://github.com/dmulholland/ivy&#34;&gt;Ivy&lt;/a&gt;. The Markdown source files are &lt;a href=&#34;https://github.com/rbind/yihui&#34;&gt;hosted on Github&lt;/a&gt;. When you read the blog posts, you can navigate to the previous post by the left-arrow key or next post by right-arrow. Please hit &amp;ldquo;Edit this page&amp;rdquo; in the menu if you find any mistakes on the page to propose a correction through Github.&lt;/p&gt;
-&lt;h2 id=&#34;some-links&#34;&gt;Some links&lt;/h2&gt;
-&lt;h3 id=&#34;statistics&#34;&gt;Statistics&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://xianblog.wordpress.com/&#34;&gt;Xi&amp;rsquo;an&amp;rsquo;s Og&lt;/a&gt;: Bayesian, MCMC, R, &amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://normaldeviate.wordpress.com/&#34;&gt;Normal Deviate&lt;/a&gt;: Thoughts on Statistics and Machine Learning&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;r-language&#34;&gt;R Language&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.r-project.org/&#34;&gt;The R Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://rweekly.org&#34;&gt;R Weekly&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;my-projects&#34;&gt;My projects&lt;/h2&gt;
-&lt;p&gt;Below is an incomplete list of packages and projects I have worked on. For a full list, please see my &lt;a href=&#34;../vitae&#34;&gt;vitae&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/animation/&#34;&gt;animation&lt;/a&gt;: a gallery of animations in statistics and utilities to create animations&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;: create blogs and websites with R Markdown&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;: author books and technical documents with R Markdown&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/DT&#34;&gt;DT&lt;/a&gt;: a wrapper of the JavaScript library DataTables&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/formatr/&#34;&gt;formatR&lt;/a&gt;: Format R code automatically&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/knitr/&#34;&gt;knitr&lt;/a&gt;: Dynamic report generation with R&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/printr/&#34;&gt;printr&lt;/a&gt;: Some printing methods for &lt;strong&gt;knitr&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/Rd2roxygen/&#34;&gt;Rd2roxygen&lt;/a&gt;: Convert Rd to roxygen documentation&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/rlp/&#34;&gt;rlp&lt;/a&gt;: Write an R package using literate programming techniques&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yihui/servr&#34;&gt;servr&lt;/a&gt;: a simple HTTP server to serve static files or dynamic documents&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yihui/testit&#34;&gt;testit&lt;/a&gt;: a simple package for testing R packages&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/tinytex/&#34;&gt;tinytex&lt;/a&gt;: a lightweight LaTeX distribution based on TeX Live&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rstudio/tufte&#34;&gt;tufte&lt;/a&gt;: Tufte styles for R Markdown documents&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;xaringan&lt;/a&gt;: presentation ninja&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigzhang.org/xfun/&#34;&gt;xfun&lt;/a&gt;: miscellaneous functions&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;p&gt;My name is Bin Zhang. You can know more about me on the &lt;a href=&#34;https://bigzhang.org/&#34;&gt;homepage&lt;/a&gt; and my &lt;a href=&#34;../vitae/&#34;&gt;vitae&lt;/a&gt;.&lt;/p&gt;
 
         
       </description>
@@ -465,6 +444,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       <description>
         &lt;h1 id=&#34;bin-zhang&#34;&gt;Bin Zhang&lt;/h1&gt;
 &lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
+&lt;p&gt;email : &lt;a href=&#34;mailto:zhangzhongkui@hotmail.com&#34;&gt;zhangzhongkui@hotmail.com&lt;/a&gt;&lt;/p&gt;
 
         
       </description>
@@ -478,7 +458,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       <guid>https://bigzhang.org/cn/about/</guid>
       <description>
         &lt;h1 id=&#34;我是谁&#34;&gt;我是谁&lt;/h1&gt;
-&lt;p&gt;姓張名賓字仲魁，一个土生土长的山里人，两个名字字一个在家里用，一个在外面用，我妈在重阳节上完山第二天就有了我，我的阳历生日刚好是程序员日，好赖也得自学一点编程。……正经介绍请参见&lt;a href=&#34;../vitae/&#34;&gt;我的简历&lt;/a&gt;。大部分时间里，我作为一个码农会在 &lt;a href=&#34;https://github.com/magic-moon&#34;&gt;GitHub&lt;/a&gt; 和[统计之都](https://c（主要是&lt;a href=&#34;https://d.cosx.org&#34;&gt;论坛&lt;/a&gt;）上出没（更多参见&lt;a href=&#34;https://usesthis.com/interviews/yihui.xie/&#34;&gt;这篇采访&lt;/a&gt;）。我有四项重度业余爱好：读（书）、写（文）、羽（球）、厨，它们包揽了我的大部分业余时间。而立之年以后，我几乎不再看电影、电视或娱乐节目，但伴随着写代码和写作会大量听歌，也喜欢看歌词。无论是生活还是工作中，我都崇尚极简主义，所以我的人情观念极其淡薄，也不太喜欢如今让生活变得臃肿的社交媒体和网购，并力推 Markdown 写作。我欣赏简洁的美，无论它来自排版、诗文、歌词或歌声。&lt;/p&gt;
+&lt;p&gt;姓張名賓字仲魁，一个土生土长的山里人，两个名字一个在家里用，一个在外面用，我母亲在重阳节上完山第二天就有了我，我的阳历生日刚好是程序员日，好赖也得自学一点编程。……正经介绍请参见&lt;a href=&#34;../vitae/&#34;&gt;我的简历&lt;/a&gt;。我有四项重度业余爱好：读（书）、写（文）、厨、股(票)，它们包揽了我的大部分业余时间。无论是生活还是工作中，我都崇尚极简主义，所以我的人情观念极其淡薄，也不太喜欢如今让生活变得臃肿的社交媒体，个人基本不在社交媒体上发表任何言论，并力推 Markdown 写作。我欣赏简洁的美，无论它来自排版、诗文、歌词或歌声。&lt;/p&gt;
 &lt;h1 id=&#34;个人兴趣&#34;&gt;个人兴趣&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;直观的、负责的和用脑子的统计学
@@ -527,8 +507,14 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
 &lt;/ul&gt;
 &lt;p&gt;未完待续。&lt;/p&gt;
 &lt;h1 id=&#34;其它链接&#34;&gt;其它链接&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.runoob.com/&#34;&gt;菜鸟教程&lt;/a&gt;:我的网页技术尽学于此&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;个人&#34;&gt;个人&lt;/h2&gt;
 &lt;p&gt;姓名拼音排序：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sqlsec.com&#34;&gt;国光&lt;/a&gt;:一个信息安全方面的大神，在他的个人网站上可以找到最全的中文版termux教程&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!--
 - [陈丽云](http://www.loyhome.com)：山东大学，经济学，网站控，useR
 - [高涛](https://joegaotao.github.io)：统计，机器学习，唇红齿白
