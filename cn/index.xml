@@ -1,68 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cns on 賓 | Magicmoon</title>
+    <title>中文日志 on Bin Zhang | 張賓</title>
     <link>https://bigzhang.org/cn/</link>
-    <description>Recent content in Cns on 賓 | Magicmoon</description>
+    <description>Recent content in 中文日志 on Bin Zhang | 張賓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 17:35:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://bigzhang.org/cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>劳动</title>
-      <link>https://bigzhang.org/cn/2020/04/work/</link>
-      <pubDate>Mon, 06 Apr 2020 17:35:57 +0000</pubDate>
+      <title>土壤铵态氮和硝态氮的测定方法</title>
+      <link>https://bigzhang.org/cn/2020/06/ammonium-nitrate/</link>
+      <pubDate>Sun, 21 Jun 2020 00:38:27 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/2020/04/work/</guid>
-      <description>何为工作？读书学习，算不算得工作。凡工作的都可量化，也因此学习也算的工作。无所事事，便是休息，时之以长，便成怠惰。 经云 工作之中，意义无穷 工作</description>
+      <guid>https://bigzhang.org/cn/2020/06/ammonium-nitrate/</guid>
+      <description>铵态氮 范围 本方法适用于土壤低含量铵态氮的测定 原理 土壤用氯化钾溶液浸提，浸提液中的铵态氮在强碱性介质中与与次氯酸盐和苯酚作用，生成水溶性染料靛</description>
     </item>
     
     <item>
-      <title>Svg Pictrue</title>
-      <link>https://bigzhang.org/cn/2020/04/svg-pictrue/</link>
-      <pubDate>Mon, 06 Apr 2020 01:44:11 +0000</pubDate>
+      <title>这样的小院</title>
+      <link>https://bigzhang.org/cn/2020/06/house/</link>
+      <pubDate>Mon, 01 Jun 2020 05:38:27 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/2020/04/svg-pictrue/</guid>
-      <description>SVG1 一个圆和一个矩形 &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; version=&amp;#34;1.1&amp;#34;&amp;gt; &amp;lt;ellipse cx=&amp;#34;51&amp;#34; cy=&amp;#34;51&amp;#34; r=&amp;#34;50&amp;#34; rx=&amp;#34;50&amp;#34; stroke=&amp;#34;blue&amp;#34; stroke-width=&amp;#34;2&amp;#34; fill=&amp;#34;red&amp;#34; /&amp;gt; &amp;lt;rect x=&amp;#34;110&amp;#34; y=&amp;#34;20&amp;#34; width=&amp;#34;300&amp;#34; height=&amp;#34;100&amp;#34; style=&amp;#34;fill:rgb(df,df,df);stroke-width:1;stroke:rgb(255,0,0)&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; 一个带圆角的矩形 &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; version=&amp;#34;1.1&amp;#34;&amp;gt; &amp;lt;rect x=&amp;#34;0&amp;#34; y=&amp;#34;0&amp;#34; width=&amp;#34;200&amp;#34; height=&amp;#34;200&amp;#34; style=&amp;#34;fill:rgb(df,df,df);stroke-width:1;stroke:rgb(255,0,0)&amp;#34; /&amp;gt; &amp;lt;rect x=&amp;#34;50&amp;#34; y=&amp;#34;20&amp;#34; rx=&amp;#34;20&amp;#34; ry=&amp;#34;20&amp;#34; width=&amp;#34;150&amp;#34; height=&amp;#34;150&amp;#34; style=&amp;#34;fill:red;stroke:black;stroke-width:5;opacity:0.5&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; 一个椭圆 &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; version=&amp;#34;1.1&amp;#34;&amp;gt; &amp;lt;ellipse cx=&amp;#34;150&amp;#34; cy=&amp;#34;75&amp;#34; rx=&amp;#34;100&amp;#34; ry=&amp;#34;50&amp;#34; style=&amp;#34;fill:yellow;stroke:purple;stroke-width:2&amp;#34;</description>
-    </item>
-    
-    <item>
-      <title>混乱还是有序</title>
-      <link>https://bigzhang.org/cn/2020/04/chaos-and-order/</link>
-      <pubDate>Sat, 04 Apr 2020 10:01:51 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/04/chaos-and-order/</guid>
-      <description>当信息太繁杂的时候，如何找到一点平静呢？ 任由自己去浏览混乱的信息，可能造成的是更大的混乱，也许这时候静一静才会好一点。放空大脑🧠，什么也别想</description>
-    </item>
-    
-    <item>
-      <title>红色蒲公英——紫天使</title>
-      <link>https://bigzhang.org/cn/2020/04/dindelion/</link>
-      <pubDate>Wed, 01 Apr 2020 09:45:08 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/04/dindelion/</guid>
-      <description>我的一个微信公号叫做飓风蒲公英，这个名字不太好，名字太刚了，不够柔弱，但是却很中意自己之前画的那个logo 唯一不好的是这个颜色，直到有一天回</description>
-    </item>
-    
-    <item>
-      <title>读一些政治</title>
-      <link>https://bigzhang.org/cn/2020/03/politic/</link>
-      <pubDate>Sun, 29 Mar 2020 14:18:22 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/03/politic/</guid>
-      <description>从他处看到一篇文章1 “我可以武斷地說：美國是不會有社會革命的，因為美国天天在社會革命之中。這種革命是漸進的，天天有進步，故天天是革命。”^[</description>
+      <guid>https://bigzhang.org/cn/2020/06/house/</guid>
+      <description>杜甫说: 安的广厦千万间，大庇天下寒士俱欢颜 这个房子的设计我非常的喜欢，就是占地面积太大了，家里批不了这么大的宅基地</description>
     </item>
     
     <item>
       <title>BiBTeX制作参考文献</title>
-      <link>https://bigzhang.org/cn/2020/03/bibtex/</link>
+      <link>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</link>
       <pubDate>Thu, 26 Mar 2020 09:38:25 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/2020/03/bibtex/</guid>
+      <guid>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</guid>
       <description>使用bibtex编译辅助文件,aux发现aux文件名如果是中文就不能编译。</description>
+    </item>
+    
+    <item>
+      <title>社会保险</title>
+      <link>https://bigzhang.org/cn/2020/03/social-insurance/</link>
+      <pubDate>Thu, 26 Mar 2020 09:38:25 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2020/03/social-insurance/</guid>
+      <description>社会保险包括 养老保险 生育保险 失业保险 医疗保险</description>
     </item>
     
     <item>
@@ -84,57 +66,12 @@
     </item>
     
     <item>
-      <title>疫情之下</title>
-      <link>https://bigzhang.org/cn/2020/03/covid-19/</link>
-      <pubDate>Tue, 24 Mar 2020 04:53:17 +0000</pubDate>
+      <title></title>
+      <link>https://bigzhang.org/cn/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/2020/03/covid-19/</guid>
-      <description>腾讯实时报道疫情肆虐的越来越严重 让人迷的是我们不仅要对抗病毒，还要对抗人与人之间的矛盾。 病毒没有那么早的消亡，或许它讲长期的存在，兴许会变得</description>
-    </item>
-    
-    <item>
-      <title>Stroage</title>
-      <link>https://bigzhang.org/cn/2020/03/stroage/</link>
-      <pubDate>Sun, 22 Mar 2020 19:02:01 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/03/stroage/</guid>
-      <description>说起Android“内部存储”，对于开发者而言可以毫不犹豫地脱口而出，不就是/data/data目录嘛，也不尽然，/data/user/0/</description>
-    </item>
-    
-    <item>
-      <title>Hugo Config</title>
-      <link>https://bigzhang.org/cn/2020/03/hugo-config/</link>
-      <pubDate>Sun, 22 Mar 2020 17:49:42 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/03/hugo-config/</guid>
-      <description>本文环境介绍 #hugo 版本 version Hugo Static Site Generator v0.54.0 linux/amd64 BuildDate: 2019-02-22T08:11:04Z #go 版本 go version go1.11.5 linux/amd64 #系统版本 more /etc/redhat-release CentOS Linux release 7.6.1810 (Core) #版本和环境详细信息 hugo env Hugo Static Site Generator v0.54.0 linux/amd64 BuildDate: 2019-02-22T08:11:04Z GOOS=&amp;quot;linux&amp;rdquo; GOARCH=&amp;quot;amd64&amp;rdquo; GOVERSION=&amp;quot;go1.11.5&amp;quot; 初始化站点 始化一个站</description>
-    </item>
-    
-    <item>
-      <title>Raspberrypi Start</title>
-      <link>https://bigzhang.org/cn/2020/03/raspberrypi-start/</link>
-      <pubDate>Sun, 22 Mar 2020 17:17:39 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/03/raspberrypi-start/</guid>
-      <description>Raspberry Pi 4快速入门手册&amp;para; Raspberry Pi® 是 Raspberry Pi Foundation 基于 ARM 制造的信用卡大小的 SBC（单板计算机）。树莓派运行基于 Debian 的 GNU / Linux 操作系统 Raspbian</description>
-    </item>
-    
-    <item>
-      <title>知识是自由和免费的，但获取知识的渠道不是</title>
-      <link>https://bigzhang.org/cn/2020/03/knowlage-is-free/</link>
-      <pubDate>Sat, 21 Mar 2020 14:45:23 +0800</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/03/knowlage-is-free/</guid>
-      <description>刚刚看了一篇王垠的文章，谈到对知识理解。先表明我自己的观点： 知识像空气、土地、阳光和水这些伟大的东西一样都是自由和免费的，但是获取他们的渠道</description>
-    </item>
-    
-    <item>
-      <title>我的Hugo个人站</title>
-      <link>https://bigzhang.org/cn/2020/03/new-hugo-site/</link>
-      <pubDate>Fri, 20 Mar 2020 16:29:35 +0800</pubDate>
-      
-      <guid>https://bigzhang.org/cn/2020/03/new-hugo-site/</guid>
-      <description>就是这么轻松，我的blog学习之路。 最先接触hexo，但是hexo比较麻烦， 然后接触mywiki，非常简洁，不过没办法实现公式的编写。 $$$e=mc^2$ hugo server</description>
+      <guid>https://bigzhang.org/cn/1/01/</guid>
+      <description></description>
     </item>
     
   </channel>

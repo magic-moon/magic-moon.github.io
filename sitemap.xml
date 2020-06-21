@@ -3,62 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bigzhang.org/cn/</loc>
-    <lastmod>2020-04-06T17:35:57+00:00</lastmod>
+    <loc>https://bigzhang.org/</loc>
+    <lastmod>2020-06-21T00:38:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/cn/2020/04/work/</loc>
-    <lastmod>2020-04-06T17:35:57+00:00</lastmod>
+    <loc>https://bigzhang.org/cn/2020/06/ammonium-nitrate/</loc>
+    <lastmod>2020-06-21T00:38:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/cn/2020/04/svg-pictrue/</loc>
-    <lastmod>2020-04-06T01:44:11+00:00</lastmod>
+    <loc>https://bigzhang.org/categories/%E5%AE%9E%E9%AA%8C%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2020-06-21T00:38:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/cn/2020/04/chaos-and-order/</loc>
-    <lastmod>2020-04-04T10:01:51+00:00</lastmod>
+    <loc>https://bigzhang.org/categories/%E5%BB%BA%E7%AD%91/</loc>
+    <lastmod>2020-06-01T05:38:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/lab/</loc>
-    <lastmod>2020-04-01T14:10:57+00:00</lastmod>
+    <loc>https://bigzhang.org/cn/2020/06/house/</loc>
+    <lastmod>2020-06-01T05:38:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/lab/2020-04-01-python-with-matplotlib/</loc>
-    <lastmod>2020-04-01T14:10:57+00:00</lastmod>
+    <loc>https://bigzhang.org/css/</loc>
+    <lastmod>2020-04-25T06:24:43+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/cn/2020/04/dindelion/</loc>
-    <lastmod>2020-04-01T09:45:08+00:00</lastmod>
+    <loc>https://bigzhang.org/css/css-intro/</loc>
+    <lastmod>2020-04-25T06:24:43+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/stock/</loc>
-    <lastmod>2020-04-01T08:48:52+00:00</lastmod>
+    <loc>https://bigzhang.org/cn/2020/03/bibtex%E5%88%B6%E4%BD%9C%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/</loc>
+    <lastmod>2020-03-26T09:38:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/stock/new-base-build/</loc>
-    <lastmod>2020-04-01T08:48:52+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/politic/</loc>
-    <lastmod>2020-03-29T14:18:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/bibtex/</loc>
+    <loc>https://bigzhang.org/cn/2020/03/social-insurance/</loc>
     <lastmod>2020-03-26T09:38:25+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://bigzhang.org/stock/basic/</loc>
+    <lastmod>2020-03-25T07:36:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bigzhang.org/stock/</loc>
     <lastmod>2020-03-25T07:36:27+00:00</lastmod>
   </url>
   
@@ -73,51 +68,42 @@
   </url>
   
   <url>
-    <loc>https://bigzhang.org/about/</loc>
-    <lastmod>2020-03-24T16:24:43+00:00</lastmod>
+    <loc>https://bigzhang.org/cn/recipe/</loc>
+    <lastmod>2017-12-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bigzhang.org/</loc>
-    <lastmod>2020-03-24T16:24:43+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/covid-19/</loc>
-    <lastmod>2020-03-24T04:53:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/stroage/</loc>
-    <lastmod>2020-03-22T19:02:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/hugo-config/</loc>
-    <lastmod>2020-03-22T17:49:42+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/raspberrypi-start/</loc>
-    <lastmod>2020-03-22T17:17:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/knowlage-is-free/</loc>
-    <lastmod>2020-03-21T14:45:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bigzhang.org/cn/2020/03/new-hugo-site/</loc>
-    <lastmod>2020-03-20T16:29:35+08:00</lastmod>
+    <loc>https://bigzhang.org/cn/</loc>
+    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://bigzhang.org/categories/</loc>
+    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bigzhang.org/cn/1/01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bigzhang.org/en/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bigzhang.org/en/vitae/</loc>
   </url>
   
   <url>
     <loc>https://bigzhang.org/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bigzhang.org/cn/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bigzhang.org/cn/vitae/</loc>
   </url>
   
 </urlset>

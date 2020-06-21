@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="generator" content="Hugo 0.68.3" />
+	<meta name="generator" content="Hugo 0.72.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>賓 | Magicmoon</title>
-    <meta property="og:title" content="賓 | Magicmoon">
+    <title>Bin Zhang | 張賓</title>
+    <meta property="og:title" content="Bin Zhang | 張賓">
     <meta property="og:type" content="website">
     
     <meta name="twitter:card" content="summary">
@@ -16,7 +16,7 @@
     
 
     
-    <meta property="description" content="Personal website of Bin  Zhang; 張賓的个人网站">
+    <meta property="description" content="Personal website of Bin Zhang; 張賓的个人网站">
     
 
     
@@ -29,9 +29,14 @@
     
 
     
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="賓 | Magicmoon" />
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Bin Zhang | 張賓" />
     
     
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
@@ -48,7 +53,7 @@
     <header class="masthead">
       
 
-<h1><a href="/"><img src="/images/logo.png" alt="Bin Zhang" /></a></h1>
+<h1><a href="/"><img src="/images/logo.png" alt="Zhongkui Zhang" /></a></h1>
 
 
 
@@ -81,7 +86,30 @@
 
 <p>此去经年应是良辰好景虚设，</p>
 <p>奈何天不假年诸多烦人事情。</p>
-
+<script src="js/three.js"></script>
+<div>
+<script>
+			// Our Javascript will go here.
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+<p>var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
+document.body.appendChild( renderer.domElement );</p>
+<p>var geometry = new THREE.BoxGeometry();
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );</p>
+<p>camera.position.z = 5;</p>
+<p>function animate() {
+requestAnimationFrame( animate );
+renderer.render( scene, camera );</p>
+<pre><code>cube.rotation.x += 0.01;
+cube.rotation.y += 0.01;
+</code></pre>
+<p>}
+animate();
+</script></p>
+</div>
 
 
   <footer>
@@ -122,9 +150,23 @@
 
   
 
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
   
   <hr>
-  <div class="copyright">© <a href="/">賓|Magicmoon</a> 1993 - 2020</div>
+  <div class="copyright">© <a href="/">Bin Zhang</a> 1993 - 2020</div>
   
   </footer>
   </article>
