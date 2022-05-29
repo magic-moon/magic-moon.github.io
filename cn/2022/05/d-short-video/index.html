@@ -15,8 +15,22 @@
 
     
       
-      <meta property="description" content=" if (!vidTest.canPlayType) {result = notSupport;} else {let oggTest = vidTest.canPlayType(&#39;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&#39;),h264Test = vidTest.canPlayType(&#39;video/mp4; &amp;hellip;">
-      <meta property="og:description" content=" if (!vidTest.canPlayType) {result = notSupport;} else {let oggTest = vidTest.canPlayType(&#39;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&#39;),h264Test = vidTest.canPlayType(&#39;video/mp4; &amp;hellip;">
+      <meta property="description" content="输入要用来解析的视频链接:
+[&amp;hellip;] 播放视频 暂停视频 下载视频
+[&amp;hellip;] 视频解析详细信息
+视频作者: 
+视频标题: 
+视频点赞量: 
+发表时间:
+">
+      <meta property="og:description" content="输入要用来解析的视频链接:
+[&amp;hellip;] 播放视频 暂停视频 下载视频
+[&amp;hellip;] 视频解析详细信息
+视频作者: 
+视频标题: 
+视频点赞量: 
+发表时间:
+">
       
     
 
@@ -31,11 +45,6 @@
 
     
     
-
-
-<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-
-
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
@@ -126,80 +135,25 @@
         margin:25px;
 
     }
-    h1,h2,p {
+    h1,h2,{
         color:rgba(160, 127, 19, 0.61);
-    }
-    p {
-        color:red;
-    }    
+    }  
 </style>
-<h2 class="example">检测您的浏览器是否支持 HTML5 视频：</h2>
-<script>
-    function checkVideo() {
-        let support = "非常棒！你的浏览器支持HTML5 video标签！",
-        someSupport = "Meh. Some support.",
-        notSupport = "Sorry. No video support.",
-        vidTest = document.createElement("video"),
-        result;
-<pre><code>    if (!vidTest.canPlayType) {
-        result = notSupport;
-    } else {
-        let oggTest = vidTest.canPlayType('video/ogg; codecs=&quot;theora, vorbis&quot;'),
-        h264Test = vidTest.canPlayType('video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;');
-
-        if (!oggTest) {
-            if (!h264Test) {
-                result = notSupport;
-            } else {
-                result = h264Test === &quot;probably&quot; ? support: someSupport;
-            }
-        } else {
-            result = oggTest === &quot;probably&quot; ? support: someSupport;
-        }
-    }
-
-    document.getElementById(&quot;checkVideoResult&quot;).innerHTML = result;
-}
-&lt;/script&gt;
-</code></pre>
-<div id="checkVideoResult">
-    <button onclick="checkVideo()">检测</button>
-</div>
-<h2>输入视频链接来解析视频</h2>
 <p>输入要用来解析的视频链接:</p>
 <input id="id1" >
 <button onclick="myFunction()" ant-click-animating-without-extra-node="false">解析</button>
 <!--这里使用了https://apis.jxcxin.cn/doc/video.html创信云网络的api接口-->
-<a></br><br></a>
-<button onclick="playVid()" type="button">播放视频</button>
+<p><button onclick="playVid()" type="button">播放视频</button>
 <button onclick="pauseVid()" type="button">暂停视频</button>
-<button onclick="" type="button" >下载视频</button>
- <a></br><br></a>
+<button onclick="" type="button" ><a id="vurl">下载视频</a></button></p>
 <div>
-    <video id="video1" controls="" loop="" autoplay="false" name="media"  width="200" >
-<pre><code>&lt;/video&gt;
-&lt;script&gt; 
-    var myVideo=document.getElementById(&quot;video1&quot;); 
-    
-    function playVid()
-    { 
-      myVideo.play(); 
-    } 
-    
-    function pauseVid()
-    { 
-      myVideo.pause(); 
-    } 
-&lt;/script&gt; 
-</code></pre>
+    <video crossOrigin="Anonymous" id="video1" controls="" loop="" autoplay="false" name="media"  width="200" ></video>
 </div>
-<h2>视频解析详细信息</h2>
-<p>
-视频作者: <span id="vauthor"></span><br /> 
+<p>视频解析详细信息</p>
+<p>视频作者: <span id="vauthor"></span><br /> 
 视频标题: <span id="vtitle"></span><br /> 
 视频点赞量: <span id="vlike"></span><br /> 
-发表时间:<span id="vtime"></span><br /> 
-</p>
+发表时间:<span id="vtime"></span><br /></p>
 <script> 
 function myFunction() {
     var reg = /(http:\/\/|https:\/\/)((\w|=|\?|\.|\/|&|-)+)/g;
@@ -227,9 +181,13 @@ function myFunction() {
                 x = document.getElementById("video1") 
                 y = JSONObject.data.url       
                 x.src = y ;
+                document.getElementById("vurl").href=y;
+               
     }
 }
-<p></script></p>
+
+</script><blockquote>
+</blockquote>
 
 
 
@@ -338,20 +296,6 @@ document.addEventListener('keyup', function(e) {
 </script>
 
   
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/tex.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
 
   
   <hr>

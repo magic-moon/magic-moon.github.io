@@ -13,7 +13,7 @@
       <pubDate>Sun, 29 May 2022 08:11:10 +0000</pubDate>
       
       <guid>https://bigzhang.org/cn/2022/05/d-short-video/</guid>
-      <description>body { margin:25px; } h1,h2,p { color:rgba(160, 127, 19, 0.61); } p { color:red; } 检测您的浏览器是否支持 HTML5 视频： function checkVideo() { let support = &#34;非常棒！你的浏览器支持HTML5 video标签！&#34;, someSupport = &#34;Meh. Some support.&#34;, notSupport =</description>
+      <description>body { margin:25px; } h1,h2,{ color:rgba(160, 127, 19, 0.61); } 输入要用来解析的视频链接: 解析 播放视频 暂停视频 下载视频 视频解析详细信息 视频作者: 视频标题: 视频点赞量: 发表时间: function myFunction() { var</description>
     </item>
     
     <item>
