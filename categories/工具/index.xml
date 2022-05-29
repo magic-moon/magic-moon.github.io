@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on Zhongkui Zhang | 张中魁</title>
+    <link>https://bigzhang.org/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on Zhongkui Zhang | 张中魁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 May 2022 08:11:10 +0000</lastBuildDate><atom:link href="https://bigzhang.org/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>短视频去水印解析</title>
+      <link>https://bigzhang.org/cn/2022/05/d-short-video/</link>
+      <pubDate>Sun, 29 May 2022 08:11:10 +0000</pubDate>
+      
+      <guid>https://bigzhang.org/cn/2022/05/d-short-video/</guid>
+      <description>body { margin:25px; } h1,h2,p { color:rgba(160, 127, 19, 0.61); } p { color:red; } 检测您的浏览器是否支持 HTML5 视频： function checkVideo() { let support = &#34;非常棒！你的浏览器支持HTML5 video标签！&#34;, someSupport = &#34;Meh. Some support.&#34;, notSupport =</description>
+    </item>
+    
+  </channel>
+</rss>
