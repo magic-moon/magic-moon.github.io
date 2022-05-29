@@ -18,11 +18,11 @@
       <meta property="description" content="下载地址
 [&amp;hellip;] 在boot目录下新建一个ssh空文件即可
 [&amp;hellip;] 与上面类似，在其目录下新建一个WiFi配置文件wpa_supplicant.conf，似乎只有新系统用
-country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ &amp;hellip;">
+country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network={ &amp;hellip;">
       <meta property="og:description" content="下载地址
 [&amp;hellip;] 在boot目录下新建一个ssh空文件即可
 [&amp;hellip;] 与上面类似，在其目录下新建一个WiFi配置文件wpa_supplicant.conf，似乎只有新系统用
-country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ &amp;hellip;">
+country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network={ &amp;hellip;">
       
     
 
@@ -86,7 +86,7 @@ country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config
 
 
 
-<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn/2020-3-25-lite-raspberrypi.md" target="_blank">编辑</a></li>
+<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn%5c2020-3-25-lite-raspberrypi.md" target="_blank">编辑</a></li>
 
 
 <li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -115,18 +115,20 @@ country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config
 
 
 
+
+
 <p><a href="https://www.raspberrypi.org/downloads/raspbian/">下载地址</a></p>
 <h1 id="开启ssh连接">开启SSH连接</h1>
 <p>在boot目录下新建一个ssh空文件即可</p>
 <h1 id="设置wifi连接">设置wifi连接</h1>
 <p>与上面类似，在其目录下新建一个WiFi配置文件<code>wpa_supplicant.conf</code>，似乎只有新系统用</p>
-<pre><code>country=CN
+<pre tabindex="0"><code>country=CN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid=&quot;你的wifi名&quot;
-    psk=&quot;wifi密码&quot;
+    ssid=&#34;你的wifi名&#34;
+    psk=&#34;wifi密码&#34;
     key_mgmt=WPA-PSK
     priority=1
 }
@@ -146,11 +148,12 @@ deb-src <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.al
 sudo git init &ndash;bare bin.git</p>
 <p>公钥放到.ssh里面</p>
 <p>OK了</p>
-<p>三，在工作机上
+<p>三，在工作机上 
 git clone pi@ip:&lt;路径&gt;/bin.git</p>
 <p>剩下的就是不断的推送了，出于安全还可以设置git不能登录shell</p>
 <h2 id="使用树莓派搭建vpn">使用树莓派搭建VPN</h2>
 <p><a href="http://haipeng.me/2017/12/12/raspberry-pi-vpn-remote-access/">http://haipeng.me/2017/12/12/raspberry-pi-vpn-remote-access/</a></p>
+
 
 
   <footer>

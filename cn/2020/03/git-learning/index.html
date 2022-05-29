@@ -18,11 +18,11 @@
       <meta property="description" content="之前学习了git差不多又忘记了，所以今天再复习一下，然后做一下记录，我之前都是在廖雪峰的网站上学习的。而且发现git的命令已经改了，所以必须自己记录一下了。
 里面介绍的非常详细，我这里只记录一下自己的学习。
 [&amp;hellip;] 这是两个基本动作，在不出错的情况下，会这两个就够了。
-工作区 └── 版本库 ├── 暂存区 └── 分支 我的理解是这样的，add把修改添加到暂存区，commit把修改 &amp;hellip;">
+工作区└── 版本库├── 暂存区└── 分支 我的理解是这样的，add把修改添加到暂存区，commit把修改 &amp;hellip;">
       <meta property="og:description" content="之前学习了git差不多又忘记了，所以今天再复习一下，然后做一下记录，我之前都是在廖雪峰的网站上学习的。而且发现git的命令已经改了，所以必须自己记录一下了。
 里面介绍的非常详细，我这里只记录一下自己的学习。
 [&amp;hellip;] 这是两个基本动作，在不出错的情况下，会这两个就够了。
-工作区 └── 版本库 ├── 暂存区 └── 分支 我的理解是这样的，add把修改添加到暂存区，commit把修改 &amp;hellip;">
+工作区└── 版本库├── 暂存区└── 分支 我的理解是这样的，add把修改添加到暂存区，commit把修改 &amp;hellip;">
       
     
 
@@ -86,7 +86,7 @@
 
 
 
-<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn/2020-3-24-git-learning.md" target="_blank">编辑</a></li>
+<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn%5c2020-3-24-git-learning.md" target="_blank">编辑</a></li>
 
 
 <li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -115,16 +115,18 @@
 
 
 
+
+
 <p>之前学习了git差不多又忘记了，所以今天再复习一下，然后做一下记录，我之前都是在<a href="https://www.liaoxuefeng.com/wiki/896043488029600/897889638509536">廖雪峰</a>的网站上学习的。而且发现git的命令已经改了，所以必须自己记录一下了。</p>
 <p>里面介绍的非常详细，我这里只记录一下自己的学习。</p>
 <h2 id="add与commit">add与commit</h2>
 <p>这是两个基本动作，在不出错的情况下，会这两个就够了。</p>
-<pre><code>工作区
+<pre tabindex="0"><code>工作区
 └── 版本库
     ├── 暂存区
     └── 分支
 </code></pre><p>我的理解是这样的，add把修改添加到暂存区，commit把修改提交到分支。</p>
-<p>一次成功是最好的结果，可是人生啊就是在不到的错误中前进的。因此修改重来是常有的事。</p>
+<p>一次成功是最好的结果，可是人生啊就是在不到的错误中前进的。因此修改重来是常用的事。</p>
 <h2 id="修改与撤销">修改与撤销</h2>
 <p>当没有提交到分支时：</p>
 <p><code>git status</code>查看暂存区状态，</p>
@@ -142,7 +144,7 @@
 <p>在Git中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。</p>
 <p>这种方式只能不断的往前回退，不能去新的版本。</p>
 <p>另外一种方式是使用版本号，就是那段非常长的数，每一个版本都有它唯一的编号。</p>
-<pre><code>$ git reset --hard 1094a
+<pre tabindex="0"><code>$ git reset --hard 1094a
 </code></pre><p>可以以此在不同版本间穿梭，那个号不用全写完，足够git找到就行。</p>
 <p>回退版本就把工作区的文件覆盖了，所以回退操作前也要谨慎。</p>
 <h2 id="git设置忽略排除和重新添加已经忽略的文件夹">git设置忽略排除和重新添加已经忽略的文件(夹)</h2>
@@ -152,7 +154,7 @@
 <p>阿里技术<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>有一篇文章对概念解释的比较清楚，不过看不懂，看起来都头大</p>
 <h2 id="添加远程仓库">添加远程仓库</h2>
 <p>git的最大优势就是他的分支仓库</p>
-<pre><code>git remote add github git@github.com:magic-moon/bigzhang.git
+<pre tabindex="0"><code>git remote add github git@github.com:magic-moon/bigzhang.git
 </code></pre><p>关联后，使用命令<code>git push -u github master</code>第一次推送master分支的所有内容；</p>
 <p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push github master</code>推送最新修改；</p>
 <h2 id="参考">参考:</h2>
@@ -160,10 +162,11 @@
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://zhuanlan.zhihu.com/p/142289703">一文讲透 Git 底层数据结构和原理</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/142289703">一文讲透 Git 底层数据结构和原理</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
+
 
 
   <footer>

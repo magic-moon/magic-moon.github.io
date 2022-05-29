@@ -5,7 +5,7 @@
     <description>Recent content in Home on Bin Zhang | 張賓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 13:23:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 14:11:27 +0000</lastBuildDate>
     <atom:link href="https://bigzhang.org/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -601,26 +601,26 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;书籍&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;作者&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;推荐指数&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;书籍&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;作者&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;推荐指数&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;《摆渡人》&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;克莱尔·麦克富尔&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;★★★★☆&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;《摆渡人》&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;克莱尔·麦克富尔&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;★★★★☆&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;《把时间当做朋友》&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;李笑来&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;★★★★★&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;《把时间当做朋友》&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;李笑来&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;★★★★★&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

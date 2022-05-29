@@ -6,11 +6,7 @@
     <description>Recent content in Stocks on Bin Zhang | 張賓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 07:36:27 +0000</lastBuildDate>
-    
-	<atom:link href="https://bigzhang.org/stock/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Mar 2020 07:36:27 +0000</lastBuildDate><atom:link href="https://bigzhang.org/stock/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic</title>
       <link>https://bigzhang.org/stock/basic/</link>
