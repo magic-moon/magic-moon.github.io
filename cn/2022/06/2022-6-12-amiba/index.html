@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>短视频去水印解析 - Zhongkui Zhang | 张中魁</title>
-    <meta property="og:title" content="短视频去水印解析 - Zhongkui Zhang | 张中魁">
+    <title>令我震撼的经营模式 - Zhongkui Zhang | 张中魁</title>
+    <meta property="og:title" content="令我震撼的经营模式 - Zhongkui Zhang | 张中魁">
     
     <meta name="twitter:card" content="summary">
 
@@ -15,22 +15,12 @@
 
     
       
-      <meta property="description" content="输入要用来解析的视频链接:
-[&amp;hellip;] 播放视频 暂停视频 下载视频
-[&amp;hellip;] 视频解析详细信息
-视频作者: 
-视频标题: 
-视频点赞量: 
-发表时间:
-">
-      <meta property="og:description" content="输入要用来解析的视频链接:
-[&amp;hellip;] 播放视频 暂停视频 下载视频
-[&amp;hellip;] 视频解析详细信息
-视频作者: 
-视频标题: 
-视频点赞量: 
-发表时间:
-">
+      <meta property="description" content="金字塔式的经营模式是常见的，但是见过像阿米巴虫一样的经营模式吗？
+[&amp;hellip;] 1959 年，稻盛和夫在几位朋友的好心帮助下成立了京瓷公司，而且在1984 年成立了第二电信公司KDDI。这两家公司一直保持了高收益，取得了持续发展，其原因就在于采取了基于牢固的经营哲学和精细的部门独立核算管理，被称为“阿米巴经营”的经营手法。
+“阿米巴”(Amoeba)在拉丁语中是单个原生体的意思，属原生动物 &amp;hellip;">
+      <meta property="og:description" content="金字塔式的经营模式是常见的，但是见过像阿米巴虫一样的经营模式吗？
+[&amp;hellip;] 1959 年，稻盛和夫在几位朋友的好心帮助下成立了京瓷公司，而且在1984 年成立了第二电信公司KDDI。这两家公司一直保持了高收益，取得了持续发展，其原因就在于采取了基于牢固的经营哲学和精细的部门独立核算管理，被称为“阿米巴经营”的经营手法。
+“阿米巴”(Amoeba)在拉丁语中是单个原生体的意思，属原生动物 &amp;hellip;">
       
     
 
@@ -99,7 +89,7 @@
 
 
 
-<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn%5c2022-5-29-dvideo.md" target="_blank">编辑</a></li>
+<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/cn%5c2022-6-12-amiba.md" target="_blank">编辑</a></li>
 
 
 <li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -115,11 +105,11 @@
     <article class="main">
       <header class="title">
       
-<h1>短视频去水印解析</h1>
+<h1>令我震撼的经营模式</h1>
 
 
 <h3>张中魁 / 
-2022-05-29</h3>
+2022-06-12</h3>
 
 <hr>
 
@@ -130,72 +120,24 @@
 
 
 
-<style>
-    body {
-        margin:25px;
-
-    }
-    h1,h2,{
-        color:rgba(160, 127, 19, 0.61);
-    }  
-</style>
-<p>输入要用来解析的视频链接:</p>
-<input id="id1" >
-<button onclick="myFunction()" ant-click-animating-without-extra-node="false">解析</button>
-<!--这里使用了https://apis.jxcxin.cn/doc/video.html创信云网络的api接口-->
-<p><button onclick="playVid()" type="button">播放视频</button>
-<button onclick="pauseVid()" type="button">暂停视频</button>
-<button onclick="" type="button" ><a id="vurl">下载视频</a></button></p>
-<div>
-    <video crossOrigin="Anonymous" id="video1" controls="" loop="" autoplay="false" name="media"  width="200" ></video>
-</div>
-<p>视频解析详细信息</p>
-<p>视频作者: <span id="vauthor"></span><br /> 
-视频标题: <span id="vtitle"></span><br /> 
-视频点赞量: <span id="vlike"></span><br /> 
-发表时间:<span id="vtime"></span><br /></p>
-<script> 
-function myFunction() {
-    var reg = /(http:\/\/|https:\/\/)((\w|=|\?|\.|\/|&|-)+)/g;
-    var intext = document.getElementById("id1").value;
-    intext = intext.match(reg);
-    var url = "https://apis.jxcxin.cn/api/video?url="+intext;
-    // 01.创建XMLHttpRequest对象，该对象就是ajax对象
-    let xhr = new XMLHttpRequest()
-    // 02.初始化请求
-    // 通过open()方法初始化请求，该方法的第一个参数是参请求方式，可选值包括：GET 和 POST
-    // 该方法的第二个参数是请求地址：我们这里是请求一个本地的json文件
-    xhr.open('GET',url)
-    // 03.发送请求
-    xhr.send()
-    // 04.通过onreadystatechange事件，监听请求数据的状态
-    xhr.onreadystatechange = function(){
-                // JSON.parse()方法，用于将json格式的字符串转为js对象
-                // responseText属性里面保存的就是后台返回的数据
-                let stu = JSON.parse(xhr.responseText)
-                var JSONObject = stu ;
-                document.getElementById("vauthor").innerHTML=JSONObject.data.author
-                document.getElementById("vlike").innerHTML=JSONObject.data.like
-                document.getElementById("vtime").innerHTML=JSONObject.data.time
-                document.getElementById("vtitle").innerHTML=JSONObject.data.title
-                x = document.getElementById("video1") 
-                y = JSONObject.data.url       
-                x.src = y ;
-                document.getElementById("vurl").href=y;
-               
-    }
-}
-
-</script><blockquote>
+<p>金字塔式的经营模式是常见的，但是见过像阿米巴虫一样的经营模式吗？</p>
+<blockquote>
+<p>1959 年，稻盛和夫在几位朋友的好心帮助下成立了京瓷公司，而且在1984 年成立了第二电信公司KDDI。这两家公司一直保持了高收益，取得了持续发展，其原因就在于采取了基于牢固的经营哲学和精细的部门独立核算管理，被称为“阿米巴经营”的经营手法。</p>
+<p>“阿米巴”(Amoeba)在拉丁语中是单个原生体的意思，属原生动物变形虫科，虫体赤裸而柔软，其身体可以向各个方向伸出伪足，使形体变化不定，故而得名“变形虫”。变形虫最大的特性是能够随外界环境的变化而变化，不断地进行自我调整来适应所面临的生存环境。这种生物由于其极强的适应能力，在地球上存在了几十亿年，是地球上最古老，最具生命力和延续性的生物体。</p>
+<p>在阿米巴经营方式下，企业组织也可以随着外部环境变化而不断“变形”，调整到最佳状态，即能适应市场变化的灵活组织。</p>
+<p>京瓷公司经历了4次全球性的经济危机都屹立不倒，并且还得到了持续发展。在上世纪90年代末期，亚洲金融风暴过后，日本很多大公司都出现问题，原本名不见经传的京瓷公司成为东京证券交易所市值最高的公司。专家学者们纷纷开始研究京瓷公司，后来发现京瓷的经营方式与“阿米巴虫”的群体行为方式非常类似，于是得名“阿米巴经营”。</p>
 </blockquote>
+<p>这种经营模式类似于《天道》中的情节，每一个员工都能在各自的工作岗位为自己的阿米巴甚至为公司整体做出贡献，如果阿米巴领导及其成员自己制定目标并为实现这一目标而感到工作的意义，那么全体员工就能够在工作中找到乐趣和价值，并努力工作。我们要激励全体员工为了公司的发展而齐心协力地参与经营，在工作中感受人生的意义和成功的喜悦，实现“全员参与的经营”。</p>
+<p>本质是一种量化的赋权管理模式。经营模式与“经营哲学”、“经营会计”一起相互支撑，一种完整的经营管理模式由此产生，让公司在商业竞争中脱颖而出。</p>
+<p>最近，我和朋友一起做了一个工作室，一起做抖音小店，那么我们能不能使用这种模式来提高团队效率呢？</p>
 
 
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/cn/2020/07/dandelion/">蒲公草</a></span>
-  <span class="nav-next"><a href="/cn/2022/06/2022-6-12-amiba/">令我震撼的经营模式</a> &rarr;</span>
+  <span class="nav-prev">&larr; <a href="/cn/2022/05/d-short-video/">短视频去水印解析</a></span>
+  <span class="nav-next"></span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -203,11 +145,9 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/cn\/2020\/07\/dandelion\/';
+    url = '\/cn\/2022\/05\/d-short-video\/';
     
   } else if (e.which == 39) {  
-    
-    url = '\/cn\/2022\/06\/2022-6-12-amiba\/';
     
   }
   if (url) window.location = url;
@@ -285,8 +225,6 @@ document.addEventListener('keyup', function(e) {
 <script async src="/js/header-link.js"></script>
 
 
-
-<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170507543-1"></script>
