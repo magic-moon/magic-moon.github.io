@@ -71,7 +71,7 @@ pre .nohighlight {
   max-width: 80px;
 }
 img[src$="#border"] {
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
 }
 .cn del {

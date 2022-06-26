@@ -9,30 +9,6 @@
     <atom:link href="https://bigzhang.org/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Csses</title>
-      <link>https://bigzhang.org/css/</link>
-      <pubDate>Sat, 25 Apr 2020 06:24:43 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/css/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stocks</title>
-      <link>https://bigzhang.org/stock/</link>
-      <pubDate>Wed, 25 Mar 2020 07:36:27 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/stock/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
       <title>菜谱</title>
       <link>https://bigzhang.org/cn/recipe/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
@@ -416,18 +392,6 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
       <author>张中魁</author>
       <guid>https://bigzhang.org/cn/</guid>
-      <description>
-        
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>坏小孩</title>
-      <link>https://bigzhang.org/bad-boy/</link>
-      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://bigzhang.org/bad-boy/</guid>
       <description>
         
         
