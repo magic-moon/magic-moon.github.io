@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>python编程基础 - Zhongkui Zhang | 张中魁</title>
+    <meta property="og:title" content="python编程基础 - Zhongkui Zhang | 张中魁">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="从整体上看，Python 语言最大的特点就是简单，该特点主要体现在以下 2 个方面：
+">
+      <meta property="og:description" content="从整体上看，Python 语言最大的特点就是简单，该特点主要体现在以下 2 个方面：
+">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://bigzhang.org/images/logo.png">
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+<link rel="stylesheet" href="/css/custom.css" />
+<script data-ad-client="ca-pub-6059946630511239" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6332e79467bfcb7464208a68481446e8";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+  
+  </head>
+
+  
+  <body class="python">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.png" alt="“Zhongkui Zhang&#34;" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/en/about/">About</a></li>
+  
+  <li><a href="/en/">Blog</a></li>
+  
+  <li><a href="/cn/about/">关于</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+
+<li><a href="https://github.com/magic-moon/bigzhang/edit/master/content/python%5c1.md" target="_blank">Edit this page</a></li>
+
+
+<li><a href="/python/index.xml" type="application/rss+xml" title="RSS feed">Subscribe</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">License</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>python编程基础</h1>
+
+
+<h3>
+2022-06-27</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+
+
+<p>从整体上看，Python 语言最大的特点就是简单，该特点主要体现在以下 2 个方面：</p>
+<ul>
+<li>Python 语言的语法非常简洁明了，即便是非软件专业的初学者，也很容易上手。</li>
+<li>和其它编程语言相比，实现同一个功能，Python 语言的实现代码往往是最短的。</li>
+</ul>
+
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev"></span>
+  <span class="nav-next"><a href="/python/2/">Ptyhon环境搭建</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/python\/2\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+    this.page.url = "https:\/\/bigzhang.org" + location.pathname;
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//bin1024.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page.';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+<script async src="/js/center-img.js"></script>
+
+<script async src="/js/right-quote.js"></script>
+
+<script async src="/js/no-highlight.js"></script>
+
+<script async src="/js/fix-footnote.js"></script>
+
+<script async src="/js/math-code.js"></script>
+
+<script async src="/js/external-link.js"></script>
+
+<script async src="/js/alt-title.js"></script>
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170507543-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-170507543-1');
+</script>
+
+  
+
+  
+  <hr>
+  <div class="copyright">© <a href="/">Zhongkui Zhang</a> 2019 - 2022</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

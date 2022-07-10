@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pythons on Zhongkui Zhang | 张中魁</title>
+    <link>https://bigzhang.org/python/</link>
+    <description>Recent content in Pythons on Zhongkui Zhang | 张中魁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jun 2022 13:26:11 +0800</lastBuildDate><atom:link href="https://bigzhang.org/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ptyhon环境搭建</title>
+      <link>https://bigzhang.org/python/2/</link>
+      <pubDate>Mon, 27 Jun 2022 13:26:11 +0800</pubDate>
+      
+      <guid>https://bigzhang.org/python/2/</guid>
+      <description>环境搭建对我而言现在已经是很简单的事了。 我可以在WI</description>
+    </item>
+    
+    <item>
+      <title>python编程基础</title>
+      <link>https://bigzhang.org/python/1/</link>
+      <pubDate>Mon, 27 Jun 2022 13:25:22 +0800</pubDate>
+      
+      <guid>https://bigzhang.org/python/1/</guid>
+      <description>从整体上看，Python 语言最大的特点就是简单，该特点主要体现在以下 2 个方面： Python 语言的语法非常简洁明了，即便是非软件专业的初学者，也很容易上</description>
+    </item>
+    
+  </channel>
+</rss>
