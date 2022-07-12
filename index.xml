@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Zhongkui Zhang | 张中魁</title>
-    <link>https://bigzhang.org/</link>
+    <link>https://zhongkui.org/</link>
     <description>Recent content in Home on Zhongkui Zhang | 张中魁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jun 2022 13:26:11 +0800</lastBuildDate>
-    <atom:link href="https://bigzhang.org/" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zhongkui.org/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Pythons</title>
-      <link>https://bigzhang.org/python/</link>
+      <link>https://zhongkui.org/python/</link>
       <pubDate>Mon, 27 Jun 2022 13:26:11 +0800</pubDate>
       
-      <guid>https://bigzhang.org/python/</guid>
+      <guid>https://zhongkui.org/python/</guid>
       <description>
         
         
@@ -22,10 +22,10 @@
     
     <item>
       <title>菜谱</title>
-      <link>https://bigzhang.org/cn/recipe/</link>
+      <link>https://zhongkui.org/cn/recipe/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/recipe/</guid>
+      <guid>https://zhongkui.org/cn/recipe/</guid>
       <description>
         &lt;style type=&#34;text/css&#34;&gt;
 body { counter-reset: recipe; }
@@ -200,7 +200,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
 &lt;p&gt;白面团：面粉、蛋清、水或牛奶、白糖、泡打粉。棕面团：面粉、蛋黄、热水、红糖、小苏打。分别擀开后叠起来再卷起来，切片，炸。&lt;/p&gt;
 &lt;h2 id=&#34;毛裹团子&#34;&gt;毛裹团子&lt;/h2&gt;
 &lt;p&gt;糯米粉加水揉成团，怕太粘的话，可以加少量面粉或粘米粉。萝卜丝腌出水后挤干、切碎，拌上腊肉丁当馅（吃辣就加辣椒面），包在糯米皮里（糯米分小团后摁出一个窝包馅）。蒸锅里垫上白菜叶子或油纸，不然团子蒸熟后很容易粘在蒸格上。&lt;/p&gt;
-&lt;h2 id=&#34;米酒cn201907last-step&#34;&gt;&lt;a href=&#34;https://bigzhang.org/cn/2019/07/last-step/&#34;&gt;米酒&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;米酒cn201907last-step&#34;&gt;&lt;a href=&#34;https://zhongkui.org/cn/2019/07/last-step/&#34;&gt;米酒&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;糯米入电饭锅煮熟，稍微煮得干一点，糯米要能成粒。冷却到温热后挖到电高压锅里，如果有锅巴，则去掉锅巴部分。酒曲用蒜臼子碾成粉末（安琪酵母已经是粉末就不用碾了），加冷水溶化，浇匀在糯米上，然后不断加少量水搅拌，搅均匀之后稍微摁平，再戳几个洞。高压锅的酸奶档减一档加热保温，二十四小时即成。成功的状态是糯米感觉松弛，洞里有积水，糯米和水尝起来有甜味，也可能带一丝酸味。挖出来装盆，再往盆里加些凉水，放进冰箱继续发酵几天，味道会变得更甜。据说放得更久能出更多酒味，但通常放不了那么久就被吃光了。&lt;/p&gt;
 &lt;h2 id=&#34;米汤&#34;&gt;米汤&lt;/h2&gt;
 &lt;p&gt;白米饭加糖，扔搅拌机里加水打成浆。&lt;/p&gt;
@@ -386,24 +386,24 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
     
     <item>
       <title>English</title>
-      <link>https://bigzhang.org/en/</link>
+      <link>https://zhongkui.org/en/</link>
       <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
       <author>Zhongkui Zhang</author>
-      <guid>https://bigzhang.org/en/</guid>
+      <guid>https://zhongkui.org/en/</guid>
       <description>
         
         
-        &lt;script&gt;location.href=&#39;https://bigzhang.org/en/&#39;;&lt;/script&gt;
+        &lt;script&gt;location.href=&#39;https://zhongkui.org/en/&#39;;&lt;/script&gt;
         
       </description>
     </item>
     
     <item>
       <title>中文日志</title>
-      <link>https://bigzhang.org/cn/</link>
+      <link>https://zhongkui.org/cn/</link>
       <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
       <author>张中魁</author>
-      <guid>https://bigzhang.org/cn/</guid>
+      <guid>https://zhongkui.org/cn/</guid>
       <description>
         
         
@@ -412,12 +412,12 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
     
     <item>
       <title>About</title>
-      <link>https://bigzhang.org/en/about/</link>
+      <link>https://zhongkui.org/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bigzhang.org/en/about/</guid>
+      <guid>https://zhongkui.org/en/about/</guid>
       <description>
-        &lt;p&gt;My name is Bin Zhang. You can know more about me on the &lt;a href=&#34;https://bigzhang.org/&#34;&gt;homepage&lt;/a&gt; and my &lt;a href=&#34;../vitae/&#34;&gt;vitae&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;My name is Bin Zhang. You can know more about me on the &lt;a href=&#34;https://zhongkui.org/&#34;&gt;homepage&lt;/a&gt; and my &lt;a href=&#34;../vitae/&#34;&gt;vitae&lt;/a&gt;.&lt;/p&gt;
 
         
       </description>
@@ -425,10 +425,10 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
     
     <item>
       <title>Curriculum Vitae</title>
-      <link>https://bigzhang.org/en/vitae/</link>
+      <link>https://zhongkui.org/en/vitae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bigzhang.org/en/vitae/</guid>
+      <guid>https://zhongkui.org/en/vitae/</guid>
       <description>
         &lt;h1 id=&#34;bin-zhang&#34;&gt;Bin Zhang&lt;/h1&gt;
 &lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
@@ -440,10 +440,10 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
     
     <item>
       <title>关于</title>
-      <link>https://bigzhang.org/cn/about/</link>
+      <link>https://zhongkui.org/cn/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/about/</guid>
+      <guid>https://zhongkui.org/cn/about/</guid>
       <description>
         &lt;h1 id=&#34;我是谁&#34;&gt;我是谁&lt;/h1&gt;
 &lt;p&gt;姓張名賓，我母亲在重阳节上完山第二天就有了我，我的阳历生日刚好是程序员日，好赖也得自学一点编程。……正经介绍请参见&lt;a href=&#34;../vitae/&#34;&gt;我的简历&lt;/a&gt;。我有四项重度业余爱好：读（书）、写（文）、厨、股(票)，它们包揽了我的大部分业余时间。无论是生活还是工作中，我都崇尚极简主义，所以我的人情观念极其淡薄，也不太喜欢如今让生活变得臃肿的社交媒体，个人基本不在社交媒体上发表任何言论，并力推 Markdown 写作。我欣赏简洁的美，无论它来自排版、诗文、歌词或歌声。&lt;/p&gt;
@@ -545,10 +545,10 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
     
     <item>
       <title>简历</title>
-      <link>https://bigzhang.org/cn/vitae/</link>
+      <link>https://zhongkui.org/cn/vitae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bigzhang.org/cn/vitae/</guid>
+      <guid>https://zhongkui.org/cn/vitae/</guid>
       <description>
         &lt;h1 id=&#34;张中魁&#34;&gt;张中魁&lt;/h1&gt;
 &lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
