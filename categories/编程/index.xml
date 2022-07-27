@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 17 Jul 2022 12:08:23 +0000</lastBuildDate><atom:link href="https://zhongkui.org/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在网页中嵌入B站视频</title>
-      <link>https://zhongkui.org/cn/2022/07/2022-7-17-insert-bilibili-video/</link>
+      <link>https://zhongkui.org/cn/2022/07/insert-bilibili-video/</link>
       <pubDate>Sun, 17 Jul 2022 12:08:23 +0000</pubDate>
       
-      <guid>https://zhongkui.org/cn/2022/07/2022-7-17-insert-bilibili-video/</guid>
-      <description>偶然发现B站分享按钮下面有一个嵌入代码，就尝试了一下在我的博客内嵌入视频，效果还不错呢,以下视频就是从B站嵌入的。 最近《二舅》火了，二舅之所</description>
+      <guid>https://zhongkui.org/cn/2022/07/insert-bilibili-video/</guid>
+      <description>偶然发现B站分享按钮下面有一个嵌入代码，就尝试了一下在我的博客内嵌入视频，效果还不错呢,以下视频就是从B站嵌入的。 &amp;lt;iframe src=&amp;#34;////player.bilibili.com/player.html?aid=556225964&amp;amp;bvid=BV1re4y197ro&amp;amp;cid=780875262&amp;amp;page=1&amp;#34; framespacing=&amp;#34;0&amp;#34; allowfullscreen=&amp;#34;allowfullscreen&amp;#34; width=&amp;#34;100%&amp;#34; height=&amp;#34;500&amp;#34; scrolling=&amp;#34;no&amp;#34; frameborder=&amp;#34;0&amp;#34; sandbox=&amp;#34;allow-top-navigation allow-same-origin allow-forms allow-scripts&amp;#34;&amp;gt; &amp;lt;/iframe&amp;gt;</description>
     </item>
     
   </channel>
