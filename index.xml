@@ -595,7 +595,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;《自己动手写区块链》&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;裴尧尧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;裴尧尧  add&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;★★★★★&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
