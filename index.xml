@@ -5,14 +5,14 @@
     <description>Recent content in Home on Zhongkui Zhang | 张中魁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jul 2022 09:10:55 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Aug 2022 10:48:28 +0800</lastBuildDate>
     <atom:link href="https://zhongkui.org/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Pythons</title>
+      <title>简单有趣学Python</title>
       <link>https://zhongkui.org/python/</link>
       <pubDate>Mon, 27 Jun 2022 13:26:11 +0800</pubDate>
-      
+      <author>ture</author>
       <guid>https://zhongkui.org/python/</guid>
       <description>
         
@@ -558,7 +558,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
 &lt;h2 id=&#34;教育背景&#34;&gt;教育背景&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;2016.09 ~ 2020.06 农学硕士&lt;/li&gt;
-&lt;li&gt;2012.09 ~ 2009.06 农学学士&lt;/li&gt;
+&lt;li&gt;2012.09 ~ 2019.06 农学学士&lt;/li&gt;
 &lt;li&gt;2008.09 ~ 2012.06 高中&lt;/li&gt;
 &lt;li&gt;1999.09 ~ 2008.06 义务教育阶段&lt;/li&gt;
 &lt;/ul&gt;
@@ -594,9 +594,9 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
 &lt;td style=&#34;text-align:center&#34;&gt;★★★★★&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;《自己动手写区块链》&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;裴尧尧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;★★★★★&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

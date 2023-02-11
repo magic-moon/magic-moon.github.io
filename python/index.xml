@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pythons on Zhongkui Zhang | 张中魁</title>
+    <title>简单有趣学Python on Zhongkui Zhang | 张中魁</title>
     <link>https://zhongkui.org/python/</link>
-    <description>Recent content in Pythons on Zhongkui Zhang | 张中魁</description>
+    <description>Recent content in 简单有趣学Python on Zhongkui Zhang | 张中魁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jun 2022 13:26:11 +0800</lastBuildDate><atom:link href="https://zhongkui.org/python/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Mon, 27 Jun 2022 13:26:11 +0800</pubDate>
       
       <guid>https://zhongkui.org/python/2/</guid>
-      <description>环境搭建对我而言现在已经是很简单的事了。 我可以在WI</description>
+      <description>环境搭建对我而言现在已经是很简单的事了。 在安卓手机上搭建python环境 如果只是兴趣的话，我最推荐的是在安卓手机📱和平板上使用Python而</description>
     </item>
     
     <item>

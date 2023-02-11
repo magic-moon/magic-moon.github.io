@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zhongkui.org/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>mermaid</title>
+      <link>https://zhongkui.org/en/2022/08/mermaid/</link>
+      <pubDate>Sun, 14 Aug 2022 10:48:28 +0800</pubDate>
+      
+      <guid>https://zhongkui.org/en/2022/08/mermaid/</guid>
+      <description>GoAT Hugo supports GoAT native. 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 Mermaid Diagrams flowchart LR A[Hard] --&amp;gt;|Text| B(Round) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result 1] C --&amp;gt;|Two| E[Result 2] flowchart LR A[Hard] --|Text| B(Round) B -- C{Decision} C --|One| D[Result 1] C --|Two| E[Result 2] gantt section Section Completed :done, des1, 2014-01-06,2014-01-08</description>
+    </item>
+    
+    <item>
       <title>When You Are Old</title>
       <link>https://zhongkui.org/en/2020/07/when-you-are-old/</link>
       <pubDate>Fri, 24 Jul 2020 14:11:27 +0000</pubDate>
