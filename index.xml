@@ -417,7 +417,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       
       <guid>https://zhongkui.org/en/about/</guid>
       <description>
-        &lt;p&gt;My name is Bin Zhang. You can know more about me on the &lt;a href=&#34;https://zhongkui.org/&#34;&gt;homepage&lt;/a&gt; and my &lt;a href=&#34;../vitae/&#34;&gt;vitae&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;My name is Zhongkui Zhang. You can know more about me on the &lt;a href=&#34;https://zhongkui.org/&#34;&gt;homepage&lt;/a&gt; and my &lt;a href=&#34;../vitae/&#34;&gt;vitae&lt;/a&gt;.&lt;/p&gt;
 
         
       </description>
@@ -430,7 +430,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       
       <guid>https://zhongkui.org/en/vitae/</guid>
       <description>
-        &lt;h1 id=&#34;bin-zhang&#34;&gt;Bin Zhang&lt;/h1&gt;
+        &lt;h1 id=&#34;zhongkui-zhang&#34;&gt;Zhongkui Zhang&lt;/h1&gt;
 &lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
 &lt;p&gt;email : &lt;a href=&#34;mailto:zhangzhongkui@hotmail.com&#34;&gt;zhangzhongkui@hotmail.com&lt;/a&gt;&lt;/p&gt;
 
