@@ -552,7 +552,7 @@ h2::before { counter-increment: recipe; content: counter(recipe) &#34;. &#34;; }
       <description>
         &lt;h1 id=&#34;张中魁&#34;&gt;张中魁&lt;/h1&gt;
 &lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
-&lt;p&gt;Email：zhangzhongkui@hotmail.com；主页：&lt;a href=&#34;https://bigzhang.org&#34;&gt;https://bigzhang.org&lt;/a&gt;；现居住于中国郑州&lt;/p&gt;
+&lt;p&gt;Email：zhangzhongkui@hotmail.com；主页：&lt;a href=&#34;https://zhongkui.org&#34;&gt;https://zhongkui.org&lt;/a&gt;；现居住于中国郑州&lt;/p&gt;
 &lt;h2 id=&#34;研究兴趣&#34;&gt;研究兴趣&lt;/h2&gt;
 &lt;p&gt;数据可视化，统计图形，交互式图形；统计计算；动态报告，可重复性研究&lt;/p&gt;
 &lt;h2 id=&#34;教育背景&#34;&gt;教育背景&lt;/h2&gt;
