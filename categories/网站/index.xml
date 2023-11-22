@@ -6,15 +6,14 @@
     <description>Recent content in 网站 on Zhongkui Zhang | 张中魁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2020 05:52:50 +0000</lastBuildDate><atom:link href="https://zhongkui.org/categories/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jun 2020 05:52:50 +0000</lastBuildDate>
+    <atom:link href="https://zhongkui.org/categories/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>云服务器使用</title>
       <link>https://zhongkui.org/cn/2020/06/cloud-server/</link>
       <pubDate>Wed, 24 Jun 2020 05:52:50 +0000</pubDate>
-      
       <guid>https://zhongkui.org/cn/2020/06/cloud-server/</guid>
       <description>我从一开始自己搭建服务器，到现在使用了多平台放置自己的内容。 搭建服务器，是学习这些技术的必由之路，但是后期就会喜欢把内容放到其他平台上，自己</description>
     </item>
-    
   </channel>
 </rss>

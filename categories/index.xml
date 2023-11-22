@@ -6,87 +6,70 @@
     <description>Recent content in 分类 on Zhongkui Zhang | 张中魁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zhongkui.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zhongkui.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NFT</title>
       <link>https://zhongkui.org/categories/nft/</link>
       <pubDate>Wed, 15 Feb 2023 08:57:11 +0800</pubDate>
-      
       <guid>https://zhongkui.org/categories/nft/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>生活</title>
       <link>https://zhongkui.org/categories/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Wed, 27 Jul 2022 09:10:55 +0800</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>编程</title>
       <link>https://zhongkui.org/categories/%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Sun, 17 Jul 2022 12:08:23 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>商业</title>
       <link>https://zhongkui.org/categories/%E5%95%86%E4%B8%9A/</link>
       <pubDate>Sun, 12 Jun 2022 01:49:05 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E5%95%86%E4%B8%9A/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>垃圾回收</title>
       <link>https://zhongkui.org/categories/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</link>
       <pubDate>Sun, 05 Jul 2020 16:04:22 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>菜谱</title>
       <link>https://zhongkui.org/categories/%E8%8F%9C%E8%B0%B1/</link>
       <pubDate>Tue, 30 Jun 2020 11:11:31 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E8%8F%9C%E8%B0%B1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>网站</title>
       <link>https://zhongkui.org/categories/%E7%BD%91%E7%AB%99/</link>
       <pubDate>Wed, 24 Jun 2020 05:52:50 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E7%BD%91%E7%AB%99/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>实验方法</title>
       <link>https://zhongkui.org/categories/%E5%AE%9E%E9%AA%8C%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sun, 21 Jun 2020 00:38:27 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E5%AE%9E%E9%AA%8C%E6%96%B9%E6%B3%95/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>建筑</title>
       <link>https://zhongkui.org/categories/%E5%BB%BA%E7%AD%91/</link>
       <pubDate>Mon, 01 Jun 2020 05:38:27 +0000</pubDate>
-      
       <guid>https://zhongkui.org/categories/%E5%BB%BA%E7%AD%91/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -5,6 +5,7 @@
     <link>https://zhongkui.org/tags/</link>
     <description>Recent content in Tags on Zhongkui Zhang | 张中魁</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://zhongkui.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://zhongkui.org/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
