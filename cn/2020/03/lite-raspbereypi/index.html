@@ -15,14 +15,8 @@
 
     
       
-      <meta property="description" content="下载地址
-[&amp;hellip;] 在boot目录下新建一个ssh空文件即可
-[&amp;hellip;] 与上面类似，在其目录下新建一个WiFi配置文件wpa_supplicant.conf，似乎只有新系统用
-country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network={ &amp;hellip;">
-      <meta property="og:description" content="下载地址
-[&amp;hellip;] 在boot目录下新建一个ssh空文件即可
-[&amp;hellip;] 与上面类似，在其目录下新建一个WiFi配置文件wpa_supplicant.conf，似乎只有新系统用
-country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config=1network={ &amp;hellip;">
+      <meta property="description" content="此文包含了我在玩树莓派的时候遇到的问题，以及之后的解决方法">
+      <meta property="og:description" content="此文包含了我在玩树莓派的时候遇到的问题，以及之后的解决方法">
       
     
 
@@ -122,13 +116,38 @@ country=CNctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdevupdate_config
       </header>
 
 
+ <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基础">基础</a>
+      <ul>
+        <li><a href="#开启ssh连接">开启SSH连接</a></li>
+        <li><a href="#设置wifi连接">设置wifi连接</a></li>
+      </ul>
+    </li>
+    <li><a href="#入门">入门</a>
+      <ul>
+        <li><a href="#设置中文字体">设置中文字体</a></li>
+        <li><a href="#更正时区">更正时区</a></li>
+        <li><a href="#挂载硬盘">挂载硬盘</a></li>
+        <li><a href="#更换国内源">更换国内源</a></li>
+      </ul>
+    </li>
+    <li><a href="#进阶">进阶</a>
+      <ul>
+        <li><a href="#创建git服务器">创建git服务器</a></li>
+        <li><a href="#使用树莓派搭建vpn">使用树莓派搭建VPN</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> 
 
 
-
+<p><a href="http://%5B2409:8a45:7f:5a0:ff2:104a:9699:8f4b%5D:1313">点这里访问我的树莓派</a></p>
 <p><a href="https://www.raspberrypi.org/downloads/raspbian/">下载地址</a></p>
-<h1 id="开启ssh连接">开启SSH连接</h1>
+<h2 id="基础">基础</h2>
+<h3 id="开启ssh连接">开启SSH连接</h3>
 <p>在boot目录下新建一个ssh空文件即可</p>
-<h1 id="设置wifi连接">设置wifi连接</h1>
+<h3 id="设置wifi连接">设置wifi连接</h3>
 <p>与上面类似，在其目录下新建一个WiFi配置文件<code>wpa_supplicant.conf</code>，似乎只有新系统用</p>
 <pre tabindex="0"><code>country=CN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -140,17 +159,19 @@ network={
     key_mgmt=WPA-PSK
     priority=1
 }
-</code></pre><h1 id="设置中文字体">设置中文字体</h1>
+</code></pre><h2 id="入门">入门</h2>
+<h3 id="设置中文字体">设置中文字体</h3>
 <p>系统默认英文，可以通过<code>sudo raspi-config</code>来配置中文字体，这样SSH显示了中文字体，树莓派连屏幕的终端还是乱码。</p>
 <p><code>sudo apt instll fonts-wqy-zenhei</code></p>
-<h1 id="更正时区">更正时区</h1>
+<h3 id="更正时区">更正时区</h3>
 <p><code>sudo dpkg-reconfigure tzdata</code>选择亚洲、上海即可</p>
-<h1 id="挂载硬盘">挂载硬盘</h1>
+<h3 id="挂载硬盘">挂载硬盘</h3>
 <p>发现一个问题，当设置自动挂载硬盘后，不安硬盘的情况下就无法正常开机。</p>
-<h1 id="更换国内源">更换国内源</h1>
+<h3 id="更换国内源">更换国内源</h3>
 <p>deb <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.aliyun.com/raspbian/raspbian/</a> jessie main non-freecontrib
 deb-src <a href="http://mirrors.aliyun.com/raspbian/raspbian/">http://mirrors.aliyun.com/raspbian/raspbian/</a> jessie mainnon-free contrib</p>
-<h2 id="创建git服务器">创建git服务器</h2>
+<h2 id="进阶">进阶</h2>
+<h3 id="创建git服务器">创建git服务器</h3>
 <p>一，创建一个用户，因为有pi用户了，创不创无所谓。</p>
 <p>二，创建一个裸仓库
 sudo git init &ndash;bare bin.git</p>
@@ -159,9 +180,8 @@ sudo git init &ndash;bare bin.git</p>
 <p>三，在工作机上
 git clone pi@ip:&lt;路径&gt;/bin.git</p>
 <p>剩下的就是不断的推送了，出于安全还可以设置git不能登录shell</p>
-<h2 id="使用树莓派搭建vpn">使用树莓派搭建VPN</h2>
+<h3 id="使用树莓派搭建vpn">使用树莓派搭建VPN</h3>
 <p><a href="http://haipeng.me/2017/12/12/raspberry-pi-vpn-remote-access/">http://haipeng.me/2017/12/12/raspberry-pi-vpn-remote-access/</a></p>
-<p><a href="http://%5B2409:8a45:7f:5a0:ff2:104a:9699:8f4b%5D:1313">点这里访问我的树莓派</a></p>
 
 
 
